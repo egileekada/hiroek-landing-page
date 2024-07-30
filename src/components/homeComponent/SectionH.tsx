@@ -4,7 +4,7 @@ import { Forwardarrow } from "../svg";
 
 export default function EightSection() {
     return (
-        <div className=" text-[#F0F2FF] bg-[#37137F] relative z-10 !font-bold gap-10 w-full flex flex-row-reverse justify-center py-24 " >
+        <div className=" text-[#F0F2FF] bg-[#37137F] relative z-10 overflow-y-hidden !font-bold gap-10 w-full flex flex-row-reverse justify-center py-24 " >
             <div className=" w-[350px] relative " >
                 <img alt="one" src="/images/6.png" className=" absolute top-0 z-0 " />
             </div>

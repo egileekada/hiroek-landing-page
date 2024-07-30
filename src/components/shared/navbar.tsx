@@ -6,13 +6,13 @@ import { Touch } from '../svg'
 export default function Navbar() {
     return (
         <div className=' w-full bg-transparent px-10 py-4 ' >
-            <div className=' h-[92px] w-full px-8 flex items-center bg-[#F0F2FF] justify-between rounded-[20px] ' >
+            <div className=' shadow-lg h-[92px] w-full px-8 flex items-center bg-[#F0F2FF] justify-between rounded-[20px] ' >
                 <img alt='logo' className=' h-[54px] ' src='/images/logo.svg' />
-                <div className=' flex gap-3 items-center ' >
+                <div className=' flex gap-6 items-center ' >
                     {navlink.map((item, index) => {
                         return(
                             <div key={index} role='button' >
-                                <p className=' leading-[20px] font-bold ' >{item?.name}</p>
+                                <a href={item?.link} className=' text-[#37137F] leading-[20px] font-black ' >{item?.name}</a>
                             </div>
                         )
                     })}
