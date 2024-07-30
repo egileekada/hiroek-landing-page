@@ -1,6 +1,6 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom"; 
 import { Footer, Navbar } from "./components/shared";
-import { AboutUsPage, HomePage } from "./pages";
+import { AboutUsPage, HomePage, MissionPage } from "./pages"; 
 
 function App() { 
 
@@ -11,6 +11,7 @@ function App() {
         {/* <Route index element={<Home />} /> */}
         <Route index element={<HomePage />} />
         <Route path='/about-us' element={<AboutUsPage />} /> 
+        <Route path='/mission' element={<MissionPage />} /> 
       </Route>
     )
   );
