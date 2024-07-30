@@ -1,0 +1,9 @@
+export { default as FirstSection } from './SectionA';
+export { default as SecondSection } from './SectionB';
+export { default as ThirdSection } from './SectionC';
+export { default as ForthSection } from './SectionD';
+export { default as FifthSection } from './SectionE';
+export { default as SixthSection } from './SectionF';
+export { default as SeventhSection } from './SectionG';
+export { default as EigthSection } from './SectionH';
+export { default as NinethSection } from './SectionI';
