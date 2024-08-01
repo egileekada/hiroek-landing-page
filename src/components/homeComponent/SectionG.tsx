@@ -10,7 +10,7 @@ export default function SeventhSection() {
             </div>
             <div className=" max-w-[500px] flex flex-col gap-3 " >
                 <p className=" text-[64px] leading-[64px] font-black " >SMART <br /> PROFILE</p>
-                <p className=" text-2xl " >create and support donations for up to 5 charitable causes at once.</p>
+                <p className=" text-2xl text-[#424242] font-axiformamedium " >create and support donations for up to 5 charitable causes at once.</p>
                 <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
                     <Forwardarrow />
                 } />

@@ -10,7 +10,7 @@ export default function SixthSection() {
             </div>
             <div className=" max-w-[500px] flex flex-col gap-3 " >
                 <p className=" text-[64px] leading-[64px] font-black " >SUPPORT <br /> CAUSES <br /> SEAMLESSLY </p>
-                <p className=" text-2xl "> Advocate for and support your favourite causes with ease, integrating them into your events without additional steps, making the process as smooth and efficient as possible.</p>
+                <p className=" text-2xl font-axiformamedium "> Advocate for and support your favourite causes with ease, integrating them into your events without additional steps, making the process as smooth and efficient as possible.</p>
                 <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#DF6951] !text-white font-bold !w-fit !shadow-lg " icon={
                     <Forwardarrow />
                 } />

@@ -1,13 +1,75 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-html, body {
-  font-family: "Paytone One", sans-serif !important;
+@font-face {
+  font-family: 'Paytone-One';
+  src: url("/public/font/PaytoneOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Axiforma-Thin';
+  src: url("/public/font/fonnts.com-Axiforma-Thin.ttf");
+} 
+
+@font-face {
+  font-family: 'Axiforma-Light';
+  src: url("/public/font/fonnts.com-Axiforma_Light.ttf");
+}
+
+@font-face {
+  font-family: 'Axiforma-Medium';
+  src: url("/public/font/fonnts.com-Axiforma_Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Axiforma-Regular';
+  src: url("/public/font/fonnts.com-Axiforma_Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Axiforma-Black';
+  src: url("/public/font/fonnts.com-Axiforma-Black.ttf");
+}
+
+@font-face {
+  font-family: 'Axiforma-Heavy';
+  src: url("/public/font/fonnts.com-Axiforma-Heavy.ttf");
+} 
+
+.paytone-one-regular {
+  font-family: "Paytone-One";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.axiforma-thin {
+  font-family: "Axiforma-Thin"; 
+}
+
+.axiforma-regular {
+  font-family: "Axiforma-Regular";
+}
+
+.axiforma-medium {
+  font-family: "Axiforma-Medium";
+}
+
+.axiforma-light {
+  font-family: "Axiforma-Light";
+}
+
+.axiforma-black {
+  font-family: "Axiforma-Black";
+}
+
+.axiforma-heavy {
+  font-family: "Axiforma-Heavy";
+}
+
+body { 
   background-color: #37137F !important;
 }
 

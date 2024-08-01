@@ -5,11 +5,11 @@ import { AppleStore, Forwardarrow, GooglePlay } from "../svg";
 export default function FirstSection() {
     return (
         <div className=' w-full xl:max-h-screen h-full  flex items-center relative text-[#F0F2FF] !font-bold px-14 ' >
-            <div className=" max-w-[800px] relative z-10 pt-48 pb-24 flex gap-1 flex-col " >
+            <div className=" max-w-[800px] relative z-20 pt-48 pb-24 flex gap-1 flex-col " >
                 <p className=" text-xl tracking-[8px] ">connect, empower, inspire</p>
                 <p className=" text-[80px] leading-[84px] " >Impactful Events Build Community Champion Causes
                 </p>
-                <p className=" text-2xl mb-5 " >Create Impactful Events, Cultivate A Supportive Community, & Passionately Champion Causes That Are Closest to Your Heart</p>
+                <p className=" text-2xl mb-5 axiforma-black " >Create Impactful Events, Cultivate A Supportive Community, & Passionately Champion Causes That Are Closest to Your Heart</p>
                 <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
                     <Forwardarrow />
                 } />
@@ -25,6 +25,7 @@ export default function FirstSection() {
             <div className=" w-full absolute inset-0 " >
                 <img alt="bg1" src="/images/bg1.png" className=" object-cover h-full w-full rounded-b-[120px] " />
             </div>
+            <div className=" absolute inset-0 bg-black bg-opacity-15 rounded-b-[120px] " />
         </div>
     )
 }

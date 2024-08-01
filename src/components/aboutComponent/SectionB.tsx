@@ -7,7 +7,7 @@ export default function SectionB() {
                 <p className=" text-[40px] leading-[50px] " >Why Hiroek?</p>
                 <p  >Hiroek is on a mission to unlock the good in everyone, driven by humanity's potential to create positive change.</p>
             </div>
-            <div className=" max-w-[700px] font-medium text-[26px] leading-[39px] flex flex-col gap-4 " >
+            <div className=" max-w-[700px] font-medium text-[26px] leading-[39px] flex flex-col gap-4 font-axiformamedium " >
                 <p className="  " >Hiroek is the platform for fundraisers, donors and charities. We provide the tools that give fundraisers the edge and drive greater impact for the causes you care about.</p>
                 <p>{`We’re empowering a new generation of philanthropists, supporters and action-takers. with a mobile first platform making It easier for you to come together with your peers to support causes you care about.`}</p>
                 <p>{`An app for positive peer to peer support. A tool for grass root based organisation to create and expand their spaces to amplify the crucial role they play in advancing social well-being.`}</p>

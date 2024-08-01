@@ -7,18 +7,18 @@ export default function SectionD() {
                 <div className=' w-full flex justify-between gap-10 ' >
                     <div className=" text-center flex flex-col items-center " >
                         <p className=" text-[72px] leading-[72px] font-black " >1.2k+</p>
-                        <p className=" text-[28px] " >Campaigns/Events</p>
+                        <p className=" text-[28px] font-axiformaregular " >Campaigns/Events</p>
                     </div>
                     <div className=" text-center flex flex-col items-center " >
                         <p className=" text-[72px] leading-[72px] font-black " >£1m+</p>
-                        <p className=" text-[28px] " >Raised</p>
+                        <p className=" text-[28px] font-axiformaregular " >Raised</p>
                     </div>
                     <div className=" text-center flex flex-col items-center " >
                         <p className=" text-[72px] leading-[72px] font-black " >100k+</p>
-                        <p className=" text-[28px] " >Donations made</p>
+                        <p className=" text-[28px] font-axiformaregular " >Donations made</p>
                     </div>
                 </div>
-                <p className=" font-semibold text-2xl " >All of this has been made possible by the hiroek community</p>
+                <p className=" font-semibold text-2xl font-axiformamedium " >All of this has been made possible by the hiroek community</p>
             </div>
         </div>
     )

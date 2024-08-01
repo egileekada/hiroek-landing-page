@@ -1,5 +1,4 @@
 import { Button, ButtonProps } from '@radix-ui/themes' 
-
 interface IProps {
     type:  "button" | "submit" | "reset";
     text: string;
@@ -15,7 +14,7 @@ export default function CustomButton({
 
     return (
         <Button {...rest} type={type} >
-            {text}
+            <p className=' paytone-one-regular ' >{text}</p>
             {icon}
         </Button>
     )

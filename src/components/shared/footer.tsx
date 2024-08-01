@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <div className=" w-full flex flex-col " >
             <NinethSection />
-            <div className=" w-full flex flex-col px-12 text-[#F0F2FF] " >
+            <div className=" w-full flex font-axiformamedium flex-col px-12 text-[#F0F2FF] " >
                 <div className=' w-full px-12 gap-6 flex py-10 justify-between ' >
                     <div className=' max-w-[370px] flex items-start flex-col gap-3 ' >
                         <img alt='whitelogo' className=" h-[54px] mr-auto " src='/images/whitelogo.svg' />
@@ -22,13 +22,13 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className=" flex flex-col gap-6 pt-2 " >
-                        <p className=" font-extrabold text-xl " >Product</p>
+                        <p className=" font-extrabold text-xl font-axiformablack " >Product</p>
                         <a className=" font-medium text-lg  " >FAQs</a>
                         <a className=" font-medium text-lg  " >Terms & Conditions</a>
                         <a className=" font-medium text-lg  " >Privacy Policy</a>
                     </div>
                     <div className=" flex flex-col gap-6 pt-2 " >
-                        <p className=" font-extrabold text-xl " >Company</p>
+                        <p className=" font-extrabold text-xl font-axiformablack " >Company</p>
                         <a className=" font-medium text-lg  " >Why Hiroek?</a>
                         <a className=" font-medium text-lg  " >Careers</a>
                         <a className=" font-medium text-lg  " >Accessibility Statement</a>
