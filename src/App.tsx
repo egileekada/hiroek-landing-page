@@ -1,8 +1,8 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom"; 
 import { Footer, Navbar } from "./components/shared";
-import { AboutUsPage, CharityPage, EventPage, FeePage, HomePage, MissionPage } from "./pages"; 
+import { AboutUsPage, CharityPage, EventPage, FeePage, HomePage, MissionPage, PolicyPage, TermsPage } from "./pages"; 
 
-function App() { 
+function App() {  
 
   const router = createBrowserRouter(
 
@@ -15,6 +15,8 @@ function App() {
         <Route path='/charities' element={<CharityPage />} /> 
         <Route path='/fees' element={<FeePage />} /> 
         <Route path='/partners' element={<EventPage />} /> 
+        <Route path='/terms' element={<TermsPage />} />
+        <Route path='/policy' element={<PolicyPage />} />
       </Route>
     )
   );

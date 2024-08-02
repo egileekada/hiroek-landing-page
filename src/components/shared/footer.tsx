@@ -3,9 +3,14 @@ import { AppleStore, Chartered, GooglePlay, Instagram, Tiktok, Twitter, Youtube 
 
 
 export default function Footer() {
+
+    const location = window.location.href; 
+    
     return (
         <div className=" w-full flex flex-col relative " >
-            <NinethSection />
+            {((!location?.includes("policy")) && (!location?.includes("terms"))) && (
+                <NinethSection />
+            )}
             <div className=" relative z-10 w-full flex flex-col font-axiformamedium lg:px-12 text-[#F0F2FF] " >
                 <div className=' w-full px-6 lg:px-12 gap-6 flex lg:flex-row flex-col py-10 justify-between ' >
                     <div className=' lg:max-w-[370px] flex items-start flex-col gap-3 ' >
@@ -24,8 +29,8 @@ export default function Footer() {
                     <div className=" flex flex-col gap-6 pt-2 " >
                         <p className=" font-extrabold text-xl font-axiformablack " >Product</p>
                         <a className=" font-medium text-lg  " >FAQs</a>
-                        <a className=" font-medium text-lg  " >Terms & Conditions</a>
-                        <a className=" font-medium text-lg  " >Privacy Policy</a>
+                        <a href="/terms" className=" font-medium text-lg  " >Terms & Conditions</a>
+                        <a href="/policy" className=" font-medium text-lg  " >Privacy Policy</a>
                     </div>
                     <div className=" flex flex-col gap-6 pt-2 " >
                         <p className=" font-extrabold text-xl font-axiformablack " >Company</p>
