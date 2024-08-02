@@ -13,7 +13,7 @@ export default function FirstSection() {
                 <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
                     <Forwardarrow />
                 } />
-                <div className=" flex gap-4 items-center mt-5 " >
+                <div className=" flex lg:flex-row flex-col gap-4 lg:items-center mt-5 " >
                     <div role="button" >
                         <GooglePlay />
                     </div>

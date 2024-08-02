@@ -80,8 +80,8 @@ export function GooglePlay() {
 
 export function AppleStore() {
     return (
-        <svg width="167" height="56" viewBox="0 0 167 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-            <rect width="166.53" height="55.98" transform="translate(0.450012)" fill="url(#pattern0_1267_25)" />
+        <svg width="188" height="56" viewBox="0 0 188 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+            <rect width="188" height="55.98" transform="translate(0.450012)" fill="url(#pattern0_1267_25)" />
             <defs>
                 <pattern id="pattern0_1267_25" patternContentUnits="objectBoundingBox" width="1" height="1">
                     <use xlinkHref="#image0_1267_25" transform="scale(0.0010917 0.00324675)" />
