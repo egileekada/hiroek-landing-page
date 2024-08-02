@@ -1,7 +1,7 @@
 
 export default function MissionSectionB() {
     return (
-        <div className=' w-full py-14 text-[26px] leading-[39px] font-axiformamedium text-center flex items-center px-12 bg-[#F0F2FF] justify-center text-[#37137F] ' >
+        <div className=' w-full py-14 text-lg lg:text-[26px] lg:leading-[39px] font-axiformamedium text-center flex items-center px-6 lg:px-12 bg-[#F0F2FF] justify-center text-[#37137F] ' >
             Regular people are the cornerstone of society. At Hiroek, we aim to redefine what it means to be a hero. We see the real heroes of today as “Everyday people coming together for good”.
             <br/><br/>
             Charity organisations and social impact groups have stepped up to address the resulting gaps in care, tackling a range of issues from mental health to homelessness, bereavement, social isolation, climate change and much more.

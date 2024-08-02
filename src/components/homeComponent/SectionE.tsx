@@ -5,7 +5,7 @@ import { Forwardarrow } from "../svg";
 export default function FifthSection() {
     return (
         <div className=" bg-[#F0F2FF] text-[#37137F] relative z-10 !font-bold px-6 gap-10 w-full flex lg:flex-row flex-col justify-center py-24 " >
-            <div className=" lg:w-[400px] relative " >
+            <div className=" lg:w-[400px] relative lg:block flex justify-center  " >
                 <img alt="one" src="/images/3.png" className=" lg:absolute top-0 lg:w-auto w-full " />
             </div>
             <div className=" lg:max-w-[500px] flex flex-col gap-3 " >

@@ -11,7 +11,7 @@ export default function FortySection() {
                     <Forwardarrow />
                 } />
             </div>
-            <div className=' relative lg:w-[500px] ' >
+            <div className=' relative lg:w-[500px] lg:block flex justify-center ' >
                 <img alt='two' src='/images/2.png' className=' lg:absolute top-0 ' />
             </div>
         </div>

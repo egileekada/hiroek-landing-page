@@ -5,7 +5,7 @@ import { Forwardarrow } from "../svg";
 export default function ThirdSection() {
     return (
         <div className=" bg-[#F0F2FF] text-[#37137F] !font-bold gap-10 rounded-t-3xl lg:rounded-t-[120px] w-full flex px-6 lg:flex-row flex-col justify-center pt-24 pb-20 " >
-            <div className=" lg:w-[300px] relative " >
+            <div className=" lg:w-[300px] relative lg:block flex justify-center " >
                 <img alt="one" src="/images/1.png" className=" lg:absolute top-0 " />
             </div>
             <div className=" max-w-[544px] flex flex-col gap-3 " >

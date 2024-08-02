@@ -51,25 +51,25 @@ export default function Carousel() {
     }
 
     return (
-        <div className=" w-full flex flex-col items-center bg-secondary text-primary " >
-            <div className=" relative w-auto px-6 " >
-                <p className=" text-[64px] leading-[64px] !capitalize " >KEY FEATURES</p>
-                <div className=" -ml-6 flex justify-center " >
+        <div className=" w-full flex flex-col items-center lg:pt-0 pt-10 bg-secondary text-primary " >
+            <div className=" relative text-center flex flex-col items-center w-auto px-6 " >
+                <p className=" text-3xl lg:text-[64px] lg:leading-[64px] !capitalize " >KEY FEATURES</p>
+                <div className=" lg:-ml-6 w-[60%] flex justify-center " >
                     <UnderLineIcon />
                 </div>
             </div>
-            <div className=" w-full flex relative py-14 gap-8 px-12  " >
-                <div className=" w-full h-[600px] " >
-                    <img alt={"carousel"} src={"/images/laptop.png"} className="absolute object-cover bottom-10 max-w-[900px] " />
+            <div className=" w-full flex lg:flex-row flex-col relative py-14 gap-8 px-6 lg:px-12  " >
+                <div className=" w-full lg:h-[600px] " >
+                    <img alt={"carousel"} src={"/images/laptop.png"} className="lg:absolute object-cover bottom-10 lg:max-w-[900px] " />
                 </div>
-                <div className=" w-full h-[600px] flex relative items-center justify-center flex-col gap-6  " >
+                <div className=" w-full lg:h-[600px] h-[400px] flex relative lg:items-center lg:justify-center flex-col gap-6  " >
                     {charityData?.map((item, index) => {
                         if (index === isShown) {
                             return (
-                                <div key={index} className=" flex flex-col text-right items-end max-w-[80%] gap-6 " >
-                                    <motion.p {...boxAnimation} className=" text-[60px] leading-[60px]" >{item?.name}</motion.p>
-                                    <motion.p {...boxAnimation} className=" text-[#424242] text-2xl leading-[36px] " >{item?.detail}</motion.p>
-                                    <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80", background: "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text="Get Started" size={"4"} type="button" className="  cursor-pointer ml-auto !text-white font-bold !w-fit !shadow-lg " icon={
+                                <div key={index} className=" flex flex-col lg:text-right lg:items-end lg:max-w-[80%] gap-6 " >
+                                    <motion.p {...boxAnimation} className=" text-3xl lg:text-[60px] lg:leading-[60px]" >{item?.name}</motion.p>
+                                    <motion.p {...boxAnimation} className=" text-[#424242] lg:text-2xl lg:leading-[36px] " >{item?.detail}</motion.p>
+                                    <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80", background: "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text="Get Started" size={"4"} type="button" className="  cursor-pointer lg:ml-auto !text-white font-bold !w-fit !shadow-lg " icon={
                                         <Forwardarrow />
                                     } />
                                 </div>

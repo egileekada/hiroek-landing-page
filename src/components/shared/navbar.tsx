@@ -2,7 +2,7 @@
 import { navlink } from '../constant'
 import { CustomButton } from '.'
 import { Touch } from '../svg'
-import { Button, Flex, Popover } from '@radix-ui/themes'
+import { Popover } from '@radix-ui/themes'
 import { IoMenu } from 'react-icons/io5'
 
 export default function Navbar() {
@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className=' w-full bg-transparent px-4 lg:px-10 py-4 ' >
             <div className=' w-full shadow-lg h-[92px] px-6 lg:px-8 flex items-center bg-[#F0F2FF] justify-between rounded-[20px] ' >
                 <a href='/' >
-                    <img alt='logo' className=' h-[54px] ' src='/images/logo.svg' />
+                    <img alt='logo' className=' h-[40px] lg:h-[54px] ' src='/images/logo.svg' />
                 </a>
                 <div className=' hidden lg:flex gap-6 items-center ' >
                     {navlink.map((item, index) => {
@@ -29,7 +29,7 @@ export default function Navbar() {
                 </div>
                 <Popover.Root>
                     <Popover.Trigger>
-                        <button >
+                        <button className=' text-primary lg:hidden ' >
                             <IoMenu size={"35px"} />
                         </button>
                     </Popover.Trigger>

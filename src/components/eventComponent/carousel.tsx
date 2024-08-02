@@ -50,27 +50,27 @@ export default function Carousel() {
     }
 
     return (
-        <div className=" w-full flex flex-row-reverse py-24 gap-8 px-12 bg-secondary text-primary " >
-            <div className=" w-full h-[600px] rounded-[120px]  relative " >
+        <div className=" w-full flex flex-col lg:flex-row-reverse  py-24 gap-8 px-6 lg:px-12 bg-secondary text-primary " >
+            <div className=" w-full lg:h-[600px] h-[300px] lg:rounded-[120px]  relative " >
                 {eventData?.map((item, index: any) => {
                     return (
                         <AnimatePresence key={index} >
                             {index === isShown &&
-                                <motion.div {...boxAnimation} style={{ width: "100%", height: "600px", borderRadius: "120px", position: "absolute", inset: "0px", objectFit: "cover" }} className=" flex justify-center items-center " >
-                                    <img alt={item?.name} src={item?.img} className=" rounded-[120px] object-cover w-full " />
+                                <motion.div {...boxAnimation} style={{ width: "100%",position: "absolute", inset: "0px", objectFit: "cover" }} className=" flex lg:justify-center lg:h-[600px] h-[300px] lg:rounded-[120px] lg:items-center " >
+                                    <img alt={item?.name} src={item?.img} className=" lg:rounded-[120px] lg:object-cover object-fill h-[300px] lg:h-auto lg:w-full " />
                                 </motion.div>
                             }
                         </AnimatePresence>
                     )
                 })}
             </div>
-            <div className=" w-full h-[600px] flex relative items-center justify-center flex-col gap-6  " >
+            <div className=" w-full lg:h-[600px] h-[350px] flex relative lg:items-center lg:justify-center flex-col gap-6  " >
                 {eventData?.map((item, index) => {
                     if (index === isShown) {
                         return (
                             <div key={index} className=" flex flex-col gap-6 " >
-                                <motion.p {...boxAnimation} className=" text-[60px] leading-[60px]" >{item?.name}</motion.p>
-                                <motion.p {...boxAnimation} className=" text-[#424242] text-2xl leading-[36px] " >{item?.detail}</motion.p>
+                                <motion.p {...boxAnimation} className=" text-3xl lg:text-[60px] lg:leading-[60px]" >{item?.name}</motion.p>
+                                <motion.p {...boxAnimation} className=" text-[#424242] text-lg lg:text-2xl lg:leading-[36px] " >{item?.detail}</motion.p>
                             </div>
                         )
                     }

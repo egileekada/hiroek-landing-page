@@ -2,9 +2,9 @@
 
 export default function SectionD() {
     return (
-        <div className=" w-full py-14 px-12 text-center gap-6 flex flex-col items-center text-primary bg-secondary " >
-            <p className=" italic text-[64px] " >Hiroek is more than an app!</p>
-            <div className=" w-fit h-[56px] bg-orangecolor px-7 rounded-full text-white text-2xl italic flex justify-center items-center " >
+        <div className=" w-full py-14 px-6 lg:px-12 text-center gap-6 flex flex-col items-center text-primary bg-secondary " >
+            <p className=" italic text-3xl lg:text-[64px] " >Hiroek is more than an app!</p>
+            <div className=" w-fit lg:h-[56px] bg-orangecolor px-7 rounded-3xl py-2 lg:py-0 lg:rounded-full text-white text-2xl italic flex justify-center items-center " >
                 {`it's a community-driven platform where intentions turn into actions.`}
             </div>
             <p className=" text-[28px] leading-[42px] font-axiformamedium italic max-w-[1240px] " >
