@@ -51,7 +51,7 @@ export default function Carousel() {
     }
 
     return (
-        <div className=" w-full flex flex-col items-center lg:pt-0 pt-10 bg-secondary text-primary " >
+        <div className=" w-full relative flex flex-col items-center lg:pt-0 pt-10 bg-secondary text-primary " >
             <div className=" relative text-center flex flex-col items-center w-auto px-6 " >
                 <p className=" text-3xl lg:text-[64px] lg:leading-[64px] !capitalize " >KEY FEATURES</p>
                 <div className=" lg:-ml-6 w-[60%] flex justify-center " >
@@ -91,6 +91,7 @@ export default function Carousel() {
                     </div>
                 </div>
             </div>
+            <img alt="whitestroke" src="/images/whitestroke.png" className=" object-cover inset-0 absolute opacity-5 w-full h-full " />
         </div>
     )
 }

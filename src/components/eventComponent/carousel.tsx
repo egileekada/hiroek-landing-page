@@ -50,8 +50,8 @@ export default function Carousel() {
     }
 
     return (
-        <div className=" w-full flex flex-col lg:flex-row-reverse  py-24 gap-8 px-6 lg:px-12 bg-secondary text-primary " >
-            <div className=" w-full lg:h-[600px] h-[300px] lg:rounded-[120px]  relative " >
+        <div className=" relative w-full flex flex-col lg:flex-row-reverse  py-24 gap-8 px-6 lg:px-12 bg-secondary text-primary " >
+            <div className=" w-full lg:h-[600px] h-[300px] relative z-10 lg:rounded-[120px] " >
                 {eventData?.map((item, index: any) => {
                     return (
                         <AnimatePresence key={index} >
@@ -64,7 +64,7 @@ export default function Carousel() {
                     )
                 })}
             </div>
-            <div className=" w-full lg:h-[600px] h-[350px] flex relative lg:items-center lg:justify-center flex-col gap-6  " >
+            <div className=" w-full lg:h-[600px] h-[350px] flex relative z-10 lg:items-center lg:justify-center flex-col gap-6  " >
                 {eventData?.map((item, index) => {
                     if (index === isShown) {
                         return (
@@ -89,6 +89,7 @@ export default function Carousel() {
                     </div>
                 </div>
             </div>
+            <img alt="whitestroke" src="/images/whitestroke.png" className=" object-cover inset-0 absolute opacity-5 w-full h-full " />
         </div>
     )
 }
