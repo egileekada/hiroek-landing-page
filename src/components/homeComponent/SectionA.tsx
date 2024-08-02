@@ -5,7 +5,7 @@ import { AppleStore, Forwardarrow, GooglePlay } from "../svg";
 export default function FirstSection() {
     return (
         <div className=" w-full relative " >
-            <div className=' w-full xl:max-h-screen h-full  flex items-center relative text-[#F0F2FF] !font-bold px-6 lg:px-14 ' >
+            <div className=' w-full xl:min-h-screen h-full  flex items-center relative text-[#F0F2FF] !font-bold px-6 lg:px-14 ' >
                 <div className=" lg:max-w-[800px] relative z-20 pt-36 lg:pt-56 pb-24 flex gap-1 flex-col " >
                     <p className=" text-xl tracking-[8px] ">connect, empower, inspire</p>
                     <p className=" text-3xl lg:text-[80px] lg:leading-[84px] " >Impactful Events Build Community Champion Causes
