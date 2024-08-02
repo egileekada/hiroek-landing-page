@@ -1,6 +1,6 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom"; 
 import { Footer, Navbar } from "./components/shared";
-import { AboutUsPage, CharityPage, FeePage, HomePage, MissionPage } from "./pages"; 
+import { AboutUsPage, CharityPage, EventPage, FeePage, HomePage, MissionPage } from "./pages"; 
 
 function App() { 
 
@@ -14,12 +14,13 @@ function App() {
         <Route path='/mission' element={<MissionPage />} /> 
         <Route path='/charities' element={<CharityPage />} /> 
         <Route path='/fees' element={<FeePage />} /> 
+        <Route path='/partners' element={<EventPage />} /> 
       </Route>
     )
   );
   return (
-    <div className=" paytone-one-regular relative w-full bg-[#37137F] text-[] flex flex-col " >
-      <div className=' w-full fixed top-0 inset-x-0 z-20 ' >
+    <div className=" paytone-one-regular relative w-screen bg-[#37137F] flex flex-col " >
+      <div className=' w-full fixed top-0 inset-x-0 z-50 ' >
         <Navbar />
       </div>
       <RouterProvider router={router} />

@@ -71,6 +71,8 @@
 
 body { 
   background-color: #37137F !important;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
 }
 
 .bordergradient { 

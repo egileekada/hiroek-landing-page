@@ -3,3 +3,4 @@ export { default as AboutUsPage } from './AboutUs';
 export { default as MissionPage } from './Mission';
 export { default as CharityPage } from './Charity';
 export { default as FeePage } from "./Fee"
+export { default as EventPage } from "./Event"

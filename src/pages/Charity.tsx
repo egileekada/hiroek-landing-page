@@ -1,5 +1,5 @@
 
-import { FirstCharitySection, ForthCharitySection, SecondCharitySection, ThirdCharitySection } from '../components/charityComponent'
+import { CharityCarousel, FirstCharitySection, ForthCharitySection, SecondCharitySection, ThirdCharitySection } from '../components/charityComponent'
 
 export default function Charity() {
     return (
@@ -7,6 +7,7 @@ export default function Charity() {
             <FirstCharitySection />
             <SecondCharitySection />
             <ThirdCharitySection />
+            <CharityCarousel />
             <ForthCharitySection />
         </div>
     )

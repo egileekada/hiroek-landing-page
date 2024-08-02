@@ -6,13 +6,13 @@ export default function Footer() {
     return (
         <div className=" w-full flex flex-col " >
             <NinethSection />
-            <div className=" w-full flex font-axiformamedium flex-col px-12 text-[#F0F2FF] " >
-                <div className=' w-full px-12 gap-6 flex py-10 justify-between ' >
-                    <div className=' max-w-[370px] flex items-start flex-col gap-3 ' >
+            <div className=" w-full flex flex-col font-axiformamedium lg:px-12 text-[#F0F2FF] " >
+                <div className=' w-full px-6 lg:px-12 gap-6 flex lg:flex-row flex-col py-10 justify-between ' >
+                    <div className=' lg:max-w-[370px] flex items-start flex-col gap-3 ' >
                         <img alt='whitelogo' className=" h-[54px] mr-auto " src='/images/whitelogo.svg' />
                         <p className=" text-lg font-medium " >Create Impactful Events, Cultivate A Supportive Community, & Passionately Champion Causes That Are Closest to Your Heart</p>
 
-                        <div className=" flex gap-3 " >
+                        <div className=" flex lg:flex-row flex-col gap-3 " >
                             <div role="button" className=" " >
                                 <GooglePlay />
                             </div>
