@@ -4,9 +4,9 @@ import { AppleStore, Chartered, GooglePlay, Instagram, Tiktok, Twitter, Youtube 
 
 export default function Footer() {
     return (
-        <div className=" w-full flex flex-col " >
+        <div className=" w-full flex flex-col relative " >
             <NinethSection />
-            <div className=" w-full flex flex-col font-axiformamedium lg:px-12 text-[#F0F2FF] " >
+            <div className=" relative z-10 w-full flex flex-col font-axiformamedium lg:px-12 text-[#F0F2FF] " >
                 <div className=' w-full px-6 lg:px-12 gap-6 flex lg:flex-row flex-col py-10 justify-between ' >
                     <div className=' lg:max-w-[370px] flex items-start flex-col gap-3 ' >
                         <img alt='whitelogo' className=" h-[54px] mr-auto " src='/images/whitelogo.svg' />
@@ -53,8 +53,11 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className=" py-4 w-full flex justify-center items-center border-t border-[#2E4E73] " >
-                    <p className=" font-medium " >All Rights Reserved  © 2024 Hiroek</p>
+                    <p className=" font-medium " >All Rights Reserved  © {new Date().getFullYear()} Hiroek</p>
                 </div>
+            </div>
+            <div className=" w-full h-full absolute inset-0 " > 
+                <img alt="bluestroke" src="/images/bluestroke.png" className=" object-cover opacity-[0.02] w-full h-full " />
             </div>
         </div>
     )
