@@ -11,8 +11,9 @@ export default function Navbar() {
 
     const [open, setOpen] = useState(false)
     const [show, setShow] = useState(false)
+    const [showLink, setShowLink] = useState(false)
 
-    const clickHandler =() => {
+    const clickHandler = () => {
         setShow(false)
         setOpen(true)
     }
@@ -83,20 +84,44 @@ export default function Navbar() {
                 </a>
                 <div className=' hidden lg:flex gap-2 h-full items-center ' >
                     {navlink.map((item, index) => {
-                        return (
-                            <div key={index} className='  h-full text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center ' role='button' >
-                                <a href={item?.link} className=' leading-[20px] font-black ' >{item?.name}</a>
-                            </div>
-                        )
+                        if (item?.name === "About Us") {
+                            return (
+                                <div className=' relative h-full ' >
+                                    <div onClick={() => setShowLink((prev) => !prev)} key={index} className={` ${showLink ? "bg-gradient-to-b from-[#37137F] to-[#8C43FE] text-white" : ""} h-full text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center `} role='button' >
+                                        <a className=' leading-[20px] font-black ' >{item?.name}</a>
+                                    </div>
+                                    {showLink && (
+                                        <div className=' absolute top-[92px] -left-[50%] rounded-b-lg w-[200px] h-fit bg-secondary z-50 ' >
+                                            <a href='/about-us' className='  h-[70px] text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center ' >
+                                                Why Hiroek?
+                                            </a>
+                                            <a href='/mission' className=' border-t-2 rounded-b-lg  h-[70px] text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center ' >
+                                                Our Mission
+                                            </a>
+                                        </div>
+                                    )}
+                                    {showLink && (
+                                        <div onClick={() => setShowLink(false)} className=' bg-black bg-opacity-10 fixed inset-0 ' />
+                                    )}
+                                </div>
+                            )
+                        } else {
+
+                            return (
+                                <div key={index} className='  h-full text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center ' role='button' >
+                                    <a href={item?.link} className=' leading-[20px] font-black ' >{item?.name}</a>
+                                </div>
+                            )
+                        }
                     })}
                     <GetInTouch />
-                    <div role='button' className=' h-[40px] bordergradient text-base font-bold px-6 rounded-[10px] flex justify-center items-center text-[#37137F] ' >
+                    {/* <div role='button' className=' h-[40px] bordergradient text-base font-bold px-6 rounded-[10px] flex justify-center items-center text-[#37137F] ' >
                         Login
-                    </div>
+                    </div> */}
                 </div>
                 <Popover.Root open={show} >
                     <Popover.Trigger>
-                        <button role='button' onClick={()=> setShow(true)} className=' text-primary lg:hidden ' >
+                        <button role='button' onClick={() => setShow(true)} className=' text-primary lg:hidden ' >
                             <IoMenu size={"35px"} />
                         </button>
                     </Popover.Trigger>
@@ -105,14 +130,14 @@ export default function Navbar() {
                             {navlink.map((item, index) => {
                                 return (
                                     <div key={index} className='' role='button' >
-                                        <a href={item?.link} onClick={()=> setShow(false)} className=' text-[#37137F] text-lg lg:leading-[20px] font-black ' >{item?.name}</a>
+                                        <a href={item?.link} onClick={() => setShow(false)} className=' text-[#37137F] text-lg lg:leading-[20px] font-black ' >{item?.name}</a>
                                     </div>
                                 )
-                            })} 
+                            })}
                             <GetInTouch />
-                            <div role='button' className=' h-[40px] bordergradient text-base font-bold px-6 rounded-[10px] flex justify-center items-center text-[#37137F] ' >
+                            {/* <div role='button' className=' h-[40px] bordergradient text-base font-bold px-6 rounded-[10px] flex justify-center items-center text-[#37137F] ' >
                                 Login
-                            </div>
+                            </div> */}
                         </div>
                     </Popover.Content>
                 </Popover.Root>
