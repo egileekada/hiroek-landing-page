@@ -108,9 +108,9 @@ export default function Navbar() {
                         } else {
 
                             return (
-                                <div key={index} className='  h-full text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center ' role='button' >
-                                    <a href={item?.link} className=' leading-[20px] font-black ' >{item?.name}</a>
-                                </div>
+                                <a href={item?.link} key={index} className='  h-full text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center ' role='button' >
+                                    <p  className=' leading-[20px] font-black ' >{item?.name}</p>
+                                </a>
                             )
                         }
                     })}
