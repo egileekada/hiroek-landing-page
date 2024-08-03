@@ -9,7 +9,7 @@ export default function SeventhSection() {
                 <img alt="one" src="/images/5.png" className=" lg:absolute top-0 z-0 " />
             </div>
             <div className=" lg:max-w-[500px] relative z-10 flex flex-col gap-3 " >
-                <p className=" text-3xl lg:text-[64px] lg:leading-[64px] font-black " >SMART <br /> PROFILE</p>
+                <p className=" text-3xl lg:text-[50px] lg:leading-[55px] font-black " >SMART <br /> PROFILE</p>
                 <p className=" lg:text-2xl text-[#424242] font-axiformamedium " >create and support donations for up to 5 charitable causes at once.</p>
                 <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
                     <Forwardarrow />

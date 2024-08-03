@@ -81,11 +81,11 @@ export default function Navbar() {
                 <a href='/' >
                     <img alt='logo' className=' h-[40px] lg:h-[54px] ' src='/images/logo.svg' />
                 </a>
-                <div className=' hidden lg:flex gap-6 items-center ' >
+                <div className=' hidden lg:flex gap-2 h-full items-center ' >
                     {navlink.map((item, index) => {
                         return (
-                            <div key={index} role='button' >
-                                <a href={item?.link} className=' text-[#37137F] leading-[20px] font-black ' >{item?.name}</a>
+                            <div key={index} className='  h-full text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center ' role='button' >
+                                <a href={item?.link} className=' leading-[20px] font-black ' >{item?.name}</a>
                             </div>
                         )
                     })}
@@ -104,7 +104,7 @@ export default function Navbar() {
                         <div className=' flex flex-col w-fit gap-4 ' >
                             {navlink.map((item, index) => {
                                 return (
-                                    <div key={index} role='button' >
+                                    <div key={index} className='' role='button' >
                                         <a href={item?.link} onClick={()=> setShow(false)} className=' text-[#37137F] text-lg lg:leading-[20px] font-black ' >{item?.name}</a>
                                     </div>
                                 )

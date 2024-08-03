@@ -9,7 +9,7 @@ export default function ThirdSection() {
                 <img alt="one" src="/images/1.png" className=" lg:absolute top-0 " />
             </div>
             <div className=" max-w-[544px] relative z-10 flex flex-col gap-3 " >
-                <p className=" text-3xl lg:text-[64px] lg:leading-[64px] font-black " >Effortless <br/> Event Creation</p>
+                <p className=" text-3xl lg:text-[50px] lg:leading-[55px] font-black " >Effortless <br/> Event Creation</p>
                 <p className=" lg:text-2xl text-[#424242] font-axiformamedium " >With Hiroek, planning and organising events is streamlined and intuitive, saving you valuable time and reducing the hassle of Event management.</p>
                 <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
                     <Forwardarrow />

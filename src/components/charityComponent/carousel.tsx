@@ -53,7 +53,7 @@ export default function Carousel() {
     return (
         <div className=" w-full relative flex flex-col items-center lg:pt-0 pt-10 bg-secondary text-primary " >
             <div className=" relative text-center flex flex-col items-center w-auto px-6 " >
-                <p className=" text-3xl lg:text-[64px] lg:leading-[64px] !capitalize " >KEY FEATURES</p>
+                <p className=" text-3xl lg:text-[60px] lg:leading-[64px] !capitalize " >KEY FEATURES</p>
                 <div className=" lg:-ml-6 w-[60%] flex justify-center " >
                     <UnderLineIcon />
                 </div>
@@ -67,7 +67,7 @@ export default function Carousel() {
                         if (index === isShown) {
                             return (
                                 <div key={index} className=" flex flex-col lg:text-right lg:items-end lg:max-w-[80%] gap-6 " >
-                                    <motion.p {...boxAnimation} className=" text-3xl lg:text-[60px] lg:leading-[60px]" >{item?.name}</motion.p>
+                                    <motion.p {...boxAnimation} className=" text-3xl lg:text-[50px] lg:leading-[60px]" >{item?.name}</motion.p>
                                     <motion.p {...boxAnimation} className=" text-[#424242] lg:text-2xl lg:leading-[36px] " >{item?.detail}</motion.p>
                                     <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80", background: "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text="Get Started" size={"4"} type="button" className="  cursor-pointer lg:ml-auto !text-white font-bold !w-fit !shadow-lg " icon={
                                         <Forwardarrow />

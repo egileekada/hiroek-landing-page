@@ -5,7 +5,7 @@ export default function FortySection() {
     return (
         <div className=' text-[#F0F2FF] !font-bold gap-10 relative rounded-t-[#F0F2FF] w-full flex lg:flex-row flex-col-reverse justify-center py-24 px-6  ' >
             <div className=' max-w-[508px] relative z-10 flex flex-col gap-3 ' >
-                <p className=' max-w-[403px] text-3xl lg:text-[64px] lg:leading-[64px] font-black ' >Instant Community Building</p>
+                <p className=' max-w-[403px] text-3xl lg:text-[50px] lg:leading-[55px] font-black ' >Instant Community Building</p>
                 <p className=' lg:text-2xl font-axiformamedium ' >Quickly connect with like-minded individuals and build your community without the usual complexities, allowing you to focus on what truly matters.</p>
                 <CustomButton  text="Get Started" size={"4"} type="button" className=" !bg-[#DF6951] !text-white font-bold !w-fit !shadow-lg " icon={
                     <Forwardarrow />
