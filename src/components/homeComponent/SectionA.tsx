@@ -63,12 +63,9 @@ export default function FirstSection() {
                             <AppleStore />
                         </div>
                     </div>
-                </div>
-                {/* <div className=" w-full absolute inset-0" >
-                    <img alt="bg1" src="/images/bg1.png" className=" object-cover h-full w-full rounded-b-3xl lg:rounded-b-[120px] " />
-                </div> */}
+                </div> 
 
-                <div className=" absolute inset-0 bg-black bg-opacity-25 rounded-b-3xl lg:rounded-b-[120px] " />
+                <div className=" absolute inset-0 bg-black bg-opacity-25 z-10 rounded-b-3xl lg:rounded-b-[120px] " />
             </div>
             {data?.map((item, index: any) => {
                     return (
