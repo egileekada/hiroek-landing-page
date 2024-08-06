@@ -11,8 +11,9 @@ export default function SeventhSection() {
     
     return (
         <div className=" bg-[#F0F2FF] text-[#37137F] relative z-10 !font-bold gap-10 w-full flex lg:flex-row flex-col lg:px-6 justify-center lg:pt-24 pt-16 lg:pb-28 " >
+            <div ref={ref} />
             <div className=' w-full lg:flex hidden justify-end relative lg:h-full h-[250px] lg:px-0 px-6 ' >
-                <motion.div ref={ref} className="origin-bottom-left absolute top-0 w-[60%] lg:w-[350px]" animate={{
+                <motion.div className="origin-bottom-left absolute top-0 w-[60%] lg:w-[350px]" animate={{
                     x: isInView ? -150 : 0
                 }}
                     transition={{ duration: 0.5, delay: isInView ? 0.5 : 0 }} >
@@ -23,7 +24,7 @@ export default function SeventhSection() {
                 </div>
             </div>
             <div className=' w-full lg:hidden flex justify-end relative lg:h-full md:h-[500px] h-[250px] lg:px-0 px-6 ' >
-                <motion.div ref={ref} className="origin-bottom-left absolute top-0 w-[60%] md:w-[50%] lg:w-[350px]" animate={{
+                <motion.div className="origin-bottom-left absolute top-0 w-[60%] md:w-[50%] lg:w-[350px]" animate={{
                     x: isInView ? -80 : 0
                 }}
                     transition={{ duration: 0.5, delay: isInView ? 0.5 : 0 }} >
