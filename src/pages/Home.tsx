@@ -9,7 +9,7 @@ export default function HomePage() {
             <ForthSection />
             <FifthSection />
             <SixthSection />
-            <SeventhSection />
+            {/* <SeventhSection /> */}
             <EigthSection />  
         </div>
     )
