@@ -21,7 +21,7 @@ function App() {
     )
   );
   return (
-    <div className=" !tracking-wider paytone-one-regular relative w-screen bg-[#37137F] flex flex-col " >
+    <div className=" !tracking-widest paytone-one-regular relative w-screen bg-[#37137F] flex flex-col " >
       <div className=' w-full fixed top-0 inset-x-0 z-50 ' >
         <Navbar />
       </div>
