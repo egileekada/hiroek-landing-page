@@ -6,7 +6,7 @@ export default function SectionB() {
     return (
         <div className=' w-full py-14 flex items-center flex-col gap-6 px-6 lg:px-12 bg-[#F0F2FF] justify-center text-[#37137F] ' >
             <div className=' w-full lg:max-w-[1153px] text-3xl lg:text-[32px] rounded-t-[44px] px-6 flex justify-center items-center border-[3px] border-[#37137F1A] lg:py-0 py-2 lg:h-[92px] ' >
-                The following illustration is based on a £10.00 donation made.
+                Example of a Donation Preview based off a £10 Donation.
             </div>
             <div className=" w-full max-w-[1153px] flex lg:flex-row flex-col lg:gap-0 gap-2 items-center justify-between font-axiformablack " >
                 <div className=" w-[355px] bg-[#37137F1A] h-[180px] rounded-[16px] flex justify-center items-center " style={{ boxShadow: "0px 4px 4px 0px #00000040" }} >
@@ -14,10 +14,10 @@ export default function SectionB() {
                         Donated<br /> Amount
                     </p>
                 </div>
-                <div className=" lg:block hidden " > 
+                <div className=" lg:block hidden " >
                     <NextArrow />
                 </div>
-                <div className=" lg:hidden " > 
+                <div className=" lg:hidden " >
                     <RiArrowDownFill size={"30px"} />
                 </div>
                 <div className=" w-[355px] bg-[#37137F1A]  h-[180px] rounded-[16px] flex justify-center items-center " style={{ boxShadow: "0px 4px 4px 0px #00000040" }} >
@@ -32,10 +32,10 @@ export default function SectionB() {
                         Transaction<br /> Fees
                     </p>
                 </div>
-                <div className=" lg:block hidden " > 
+                <div className=" lg:block hidden " >
                     <NextArrow />
                 </div>
-                <div className=" lg:hidden " > 
+                <div className=" lg:hidden " >
                     <RiArrowDownFill size={"30px"} />
                 </div>
                 <div className=" w-[355px] bg-[#37137F1A]  h-[180px] rounded-[16px] flex justify-center items-center " style={{ boxShadow: "0px 4px 4px 0px #00000040" }} >
@@ -50,10 +50,10 @@ export default function SectionB() {
                         Charity<br /> Receives
                     </p>
                 </div>
-                <div className=" lg:block hidden " > 
+                <div className=" lg:block hidden " >
                     <NextArrow />
                 </div>
-                <div className=" lg:hidden text-primary " > 
+                <div className=" lg:hidden text-primary " >
                     <RiArrowDownFill size={"30px"} />
                 </div>
                 <div className=" w-[355px] bg-primary  h-[180px] rounded-[16px] flex justify-center items-center " style={{ boxShadow: "0px 4px 4px 0px #00000040" }} >

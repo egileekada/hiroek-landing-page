@@ -64,7 +64,7 @@ export default function Carousel() {
                     )
                 })}
             </div>
-            <div className=" w-full lg:h-[600px] h-[350px] flex relative z-10 lg:items-center lg:justify-center flex-col gap-6  " >
+            <div className=" w-full lg:h-[600px] h-[350px] flex relative  lg:items-center lg:justify-center flex-col gap-6  " >
                 {eventData?.map((item, index) => {
                     if (index === isShown) {
                         return (
@@ -75,8 +75,8 @@ export default function Carousel() {
                         )
                     }
                 })}
-                <div className=" w-full flex absolute bottom-0 justify-between items-center " >
-                    <div onClick={() => clickHandler(isShown - 1)} role="button" className=" " >
+                <div className=" w-full flex absolute bottom-0 justify-between z-[12] items-center " >
+                    <div  onClick={() => clickHandler(isShown - 1)} role="button" className=" relative -z2 " >
                         <CarouselLeftArrow />
                     </div>
                     <div className=" flex gap-2" >
@@ -84,12 +84,12 @@ export default function Carousel() {
                             <motion.div {...boxAnimation} key={item?.name} className={` bg-[#37137F] ${index === isShown ? " w-[40px] " : " w-[10px] bg-opacity-30"}  h-[10px] rounded-[44px] `} />
                         ))}
                     </div>
-                    <div onClick={() => clickHandler(isShown + 1)} role="button" className=" " >
+                    <div  onClick={() => clickHandler(isShown + 1)} role="button" className=" " >
                         <CarouselRightArrow />
                     </div>
                 </div>
             </div>
-            <img alt="whitestroke" src="/images/whitestroke.png" className=" object-cover inset-0 absolute opacity-5 w-full h-full " />
+            {/* <img alt="whitestroke" src="/images/whitestroke.png" className=" object-cover inset-0 absolute opacity-5 w-full h-full " /> */}
         </div>
     )
 }

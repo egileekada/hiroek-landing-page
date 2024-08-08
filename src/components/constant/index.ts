@@ -46,31 +46,35 @@ export const charityData = [
         detail: "Create and customise profiles with interests and affiliations.", 
     }, 
     {
-        name: "organize and manage events",
+        name: "Organise and Manage Events",
         detail: "Hiroek provides a dynamic space for you to showcase your events, share details, and create anticipation.", 
     }, 
     {
-        name: "TRACK USER SIGN-UPS",
+        name: "Track Sign-Ups",
         detail: "Allow attendees to easily join via the app, streamlining the registration process.", 
     }, 
     {
-        name: "CONNECT LOCALLY AND BEYOND",
-        detail: "Leverage the power of local and interest based communities. Reach a diverse and engaged audience that aligns with your mission. Enable community members to connect both online and in real life.", 
+        name: "Connect Locally and Beyond",
+        detail: "Leverage the power of local and interest-based communities. Reach a diverse and engaged audience that aligns with your mission. Enable community members to connect both online and in real life.", 
     }, 
     {
-        name: "MANAGE USER DONATIONS",
+        name: "Manage Donations",
         detail: "Facilitate easy and secure donation processes directly through the app, empowering your supporters to contribute effortlessly.", 
     }, 
     {
-        name: "AMPLIFY YOUR MESSAGE",
-        detail: "Hiroek provides a dedicated space for you to share your mission, impact stories, and upcoming events. Reach a wider audience and raise awareness for your cause.", 
+        name: "Amplify Your Message",
+        detail: "- Hiroek provides a dedicated space for you to share your mission, impact stories, and upcoming events \n - Reach a wider audience and raise awareness for your cause.", 
     }, 
     {
-        name: "COMMUNITY BUILDING",
-        detail: "Create communities centered around specific causes or interests. Foster a sense of belonging among your supporters and strengthen your network.", 
+        name: "Community Building",
+        detail: "- Create communities centred around specific causes or interests. \n - Foster a sense of belonging among your supporters and strengthen your network. ", 
     }, 
     {
-        name: "CROSS PLATFORM SHARING",
-        detail: "We have implemented social media integration for easy sharing, to gain more  exposure and spread your message. ", 
+        name: "Improved Communication",
+        detail: "Real-time Updates:  Send push notifications for important updates, changes, or reminders directly to community members and events participants.", 
+    },
+    {
+        name: "Cross platform Sharing",
+        detail: "We have implemented social media integration for easy sharing, to gain more  exposure and spread your message.", 
     }
 ]

@@ -8,8 +8,7 @@ export default function SectionD() {
                 {`it's a community-driven platform where intentions turn into actions.`}
             </div>
             <p className=" relative z-10 text-[28px] leading-[42px] font-axiformamedium italic max-w-[1240px] " >
-                We believe in bringing together charities, supporters, and communities to collectively create a positive and lasting impact. <br/>
-                We aim to redefine what it means to be a hero by empowering everyday people to do heroic deeds, such as supporting charities like yours.
+            We help you carve out a space in real life where your community members feel they belong.
             </p>
             <img alt="whitestroke" src="/images/whitestroke.png" className=" object-cover inset-0 absolute opacity-5 w-full h-full " />
         </div>

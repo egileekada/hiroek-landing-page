@@ -34,10 +34,10 @@ export default function FifthSection() {
                     <img alt="one" src="/images/animation/Event5.png" className=" absolute top-0 lg:w-auto w-full " />
                 </div>
             </div>
-            <div className="  w-full relative z-10 flex bg-[#F0F2FF] pt-6 lg:px-0 px-6 " >
-                <div className=" lg:max-w-[500px] relative z-10 flex flex-col gap-3 " >
+            <div className="  w-full relative z-10 flex bg-[#F0F2FF] lg:h-[350px] pt-6 lg:px-0 px-6 " >
+                <div className=" lg:max-w-[500px] lg:relative lg:z-0 z-10 flex flex-col gap-3 " >
                     <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black " >Discover <br /> your tribe!</p>
-                    <p className=" lg:text-2xl text-[#424242] font-axiformamedium " >Hiroek makes inviting and connecting with your friends easy. Incorporated messaging and interaction features ensuring you remain connected to your existing network on and offline.</p>
+                    <p className=" lg:text-2xl text-[#424242] font-axiformamedium " >Hiroek makes inviting and connecting  your friends to your events easy. </p>
                     <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrow />
                     } />

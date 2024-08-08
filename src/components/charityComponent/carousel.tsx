@@ -68,7 +68,7 @@ export default function Carousel() {
                             return (
                                 <div key={index} className=" flex flex-col lg:text-right lg:items-end lg:max-w-[80%] gap-6 " >
                                     <motion.p {...boxAnimation} className=" text-3xl lg:text-[50px] lg:leading-[60px]" >{item?.name}</motion.p>
-                                    <motion.p {...boxAnimation} className=" text-[#424242] lg:text-2xl lg:leading-[36px] " >{item?.detail}</motion.p>
+                                    <motion.p {...boxAnimation} className=" whitespace-pre-line text-[#424242] lg:text-2xl lg:leading-[36px] " >{item?.detail}</motion.p>
                                     <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80", background: "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text="Get Started" size={"4"} type="button" className="  cursor-pointer lg:ml-auto !text-white font-bold !w-fit !shadow-lg " icon={
                                         <Forwardarrow />
                                     } />
@@ -76,7 +76,7 @@ export default function Carousel() {
                             )
                         }
                     })}
-                    <div className=" w-full flex absolute bottom-0 justify-between items-center " >
+                    <div className=" w-full flex absolute bottom-0 z-10 justify-between items-center " >
                         <div onClick={() => clickHandler(isShown - 1)} role="button" className=" " >
                             <CarouselLeftArrow />
                         </div>
@@ -91,7 +91,7 @@ export default function Carousel() {
                     </div>
                 </div>
             </div>
-            <img alt="whitestroke" src="/images/whitestroke.png" className=" object-cover inset-0 absolute opacity-5 w-full h-full " />
+            <img alt="whitestroke" src="/images/whitestroke.png" className=" object-cover inset-0 absolute opacity-5 -z-[0] w-full h-full " />
         </div>
     )
 }
