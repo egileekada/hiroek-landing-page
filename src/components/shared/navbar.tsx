@@ -3,9 +3,10 @@ import { navlink } from '../constant'
 import { CustomButton } from '.'
 import { CloseIcon, Touch } from '../svg'
 import { Popover } from '@radix-ui/themes'
-import { IoMenu } from 'react-icons/io5'
+import { IoArrowBackSharp, IoArrowDown, IoMenu } from 'react-icons/io5'
 import * as Dialog from '@radix-ui/react-dialog';
 import { useState } from 'react'
+import { IoIosArrowDown, IoIosArrowUp, IoMdArrowDown } from 'react-icons/io'
 
 export default function Navbar() {
 
@@ -126,12 +127,19 @@ export default function Navbar() {
                         </button>
                     </Popover.Trigger>
                     <Popover.Content maxWidth={"500px"}>
-                        <div className=' flex flex-col w-full gap-6 ' >
+                        <div className=' flex flex-col w-full gap-6 py-3 px-2 ' >
                             {navlink.map((item, index) => {
                                 if (item?.name === "About Us") {
                                     return (
                                         <div key={index} className=' flex gap-4 flex-col ' role='button' >
-                                            <p role='button' onClick={() => setShowLink((prev) => !prev)} className=' text-[#37137F] text-lg lg:leading-[20px] font-semibold ' >{item?.name}</p>
+                                            <div role='button' onClick={() => setShowLink((prev) => !prev)} className=' flex items-center w-full justify-between ' > 
+                                                <p className=' text-[#37137F] text-lg lg:leading-[20px] font-semibold ' >{item?.name}</p>
+                                                {!showLink ? (
+                                                    <IoIosArrowDown />
+                                                ) : (
+                                                    <IoIosArrowUp />
+                                                )}
+                                            </div>
                                             {showLink && (
                                                 <div className=' w-full flex flex-col gap-5 ' >
                                                     <a href='/about-us' className='  text-[#37137F] pl-2 font-semibold ' >
