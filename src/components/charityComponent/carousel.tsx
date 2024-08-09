@@ -59,10 +59,10 @@ export default function Carousel() {
                 </div>
             </div>
             <div className=" w-full flex lg:flex-row flex-col relative py-14 gap-8 px-6 lg:px-12  " >
-                <div className=" w-full lg:h-[600px] " >
+                <div className=" w-full lg:h-[600px] lg:pl-0 pl-6 " >
                     <img alt={"carousel"} src={"/images/laptop.png"} className="lg:absolute object-cover bottom-10 lg:max-w-[900px] " />
                 </div>
-                <div className=" w-full lg:h-[600px] h-[400px] flex relative lg:items-center lg:justify-center flex-col gap-6  " >
+                <div className=" w-full lg:h-[600px] h-fit flex lg:relative lg:items-center lg:justify-center flex-col gap-6  " >
                     {charityData?.map((item, index) => {
                         if (index === isShown) {
                             return (
@@ -76,11 +76,11 @@ export default function Carousel() {
                             )
                         }
                     })}
-                    <div className=" w-full flex absolute bottom-0 z-10 justify-between items-center " >
+                    <div className=" w-full hidden lg:flex absolute bottom-0 z-10 justify-between items-center " >
                         <div onClick={() => clickHandler(isShown - 1)} role="button" className=" w-[45px] lg:w-[64px] " >
                             <CarouselLeftArrow />
                         </div>
-                        <div className=" flex gap-2" >
+                        <div className=" hidden lg:flex gap-2" >
                             {charityData?.map((item, index) => (
                                 <motion.div {...boxAnimation} key={item?.name} className={` bg-[#37137F] ${index === isShown ? " w-[40px] " : " w-[10px] bg-opacity-30"}  h-[10px] rounded-[44px] `} />
                             ))}
@@ -88,7 +88,7 @@ export default function Carousel() {
                         <div onClick={() => clickHandler(isShown + 1)} role="button" className=" w-[45px] lg:w-[64px] "  >
                             <CarouselRightArrow />
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
             <img alt="whitestroke" src="/images/whitestroke.png" className=" object-cover inset-0 absolute opacity-5 -z-[0] w-full h-full " />

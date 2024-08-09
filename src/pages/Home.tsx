@@ -6,9 +6,9 @@ export default function HomePage() {
             <FirstSection />
             <SecondSection />
             <ThirdSection />
-            <ForthSection />
-            <FifthSection />
             <SixthSection />
+            <FifthSection />
+            <ForthSection />
             {/* <SeventhSection /> */}
             <EigthSection />  
         </div>

@@ -64,7 +64,7 @@ export default function Carousel() {
                     )
                 })}
             </div>
-            <div className=" w-full lg:h-[600px] h-[350px] flex relative  lg:items-center lg:justify-center flex-col gap-6  " >
+            <div className=" w-full lg:h-[600px] h-auto flex relative  lg:items-center lg:justify-center flex-col gap-6  " >
                 {eventData?.map((item, index) => {
                     if (index === isShown) {
                         return (
@@ -75,7 +75,7 @@ export default function Carousel() {
                         )
                     }
                 })}
-                <div className=" w-full flex absolute bottom-0 justify-between z-[12] items-center " >
+                <div className=" w-full  hidden lg:flex  absolute bottom-0 justify-between z-[12] items-center " >
                     <div  onClick={() => clickHandler(isShown - 1)} role="button" className="  w-[45px] lg:w-[64px]  relative -z2 " >
                         <CarouselLeftArrow />
                     </div>
