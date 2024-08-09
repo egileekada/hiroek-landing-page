@@ -11,67 +11,73 @@
 
 @font-face {
   font-family: 'Paytone-One';
-  src: url("/font/PaytoneOne-Regular.ttf");
+  src: url("/font/Inter.ttf");
 }
 
 @font-face {
   font-family: 'Axiforma-Thin';
-  src: url("/font/fonnts.com-Axiforma-Thin.ttf");
+  src: url("/font/Inter.ttf");
 } 
 
 @font-face {
   font-family: 'Axiforma-Light';
-  src: url("/font/fonnts.com-Axiforma_Light.ttf");
+  src: url("/font/Inter.ttf");
 }
 
 @font-face {
   font-family: 'Axiforma-Medium';
-  src: url("/font/fonnts.com-Axiforma_Medium.ttf");
+  src: url("/font/Inter.ttf");
 }
 
 @font-face {
   font-family: 'Axiforma-Regular';
-  src: url("/font/fonnts.com-Axiforma_Regular.ttf");
+  src: url("/font/Inter.ttf");
 }
 
 @font-face {
   font-family: 'Axiforma-Black';
-  src: url("/font/fonnts.com-Axiforma-Black.ttf");
+  src: url("/font/Inter.ttf");
 }
 
 @font-face {
   font-family: 'Axiforma-Heavy';
-  src: url("/font/fonnts.com-Axiforma-Heavy.ttf");
+  src: url("/font/Inter.ttf");
 } 
 
 .paytone-one-regular {
   font-family: "Paytone-One";
-  font-weight: 400; 
+  font-weight: 800; 
   font-style: normal;
 }
 
 .axiforma-thin {
   font-family: "Axiforma-Thin"; 
+  font-weight: 700; 
 }
 
 .axiforma-regular {
   font-family: "Axiforma-Regular";
+  font-weight: 400; 
 }
 
 .axiforma-medium {
   font-family: "Axiforma-Medium";
+  font-weight: 500; 
 }
 
 .axiforma-light {
   font-family: "Axiforma-Light";
+  font-weight: 300; 
 }
 
 .axiforma-black {
   font-family: "Axiforma-Black";
+  font-weight: 700; 
 }
 
 .axiforma-heavy {
   font-family: "Axiforma-Heavy";
+  font-weight: 8s00; 
 }
 
 body { 

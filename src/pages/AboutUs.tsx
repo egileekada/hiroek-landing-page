@@ -1,5 +1,5 @@
 
-import { FirstAboutSection, ForthAboutSection, SecondAboutSection, ThirdAboutSection } from "../components/aboutComponent";
+import { FirstAboutSection, SecondAboutSection, ThirdAboutSection } from "../components/aboutComponent";
 
 export default function AboutUs() {
     return (
@@ -7,7 +7,7 @@ export default function AboutUs() {
             <FirstAboutSection />
             <SecondAboutSection />
             <ThirdAboutSection />
-            <ForthAboutSection />
+            {/* <ForthAboutSection /> */}
         </div>
     )
 }

@@ -1,10 +1,10 @@
 
-import { CharityCarousel, FirstCharitySection, ForthCharitySection, SecondCharitySection, ThirdCharitySection } from '../components/charityComponent'
+import { CharityCarousel, ForthCharitySection, SecondCharitySection, ThirdCharitySection } from '../components/charityComponent'
 
 export default function Charity() {
     return (
         <div className=' w-full h-full bg-[#37137F] overflow-x-hidden ' >
-            <FirstCharitySection />
+            {/* <FirstCharitySection /> */}
             <SecondCharitySection />
             <ThirdCharitySection />
             <CharityCarousel />

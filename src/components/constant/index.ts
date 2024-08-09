@@ -17,6 +17,29 @@ export const navlink = [
     }
 ]
 
+export const navlinkmobile = [
+    {
+        name: "About Us",
+        link: "/about-us"
+    },
+    {
+        name: "Mission",
+        link: "/mission"
+    },
+    {
+        name: "For Charities",
+        link: "/charities"
+    },
+    {
+        name: "Fees",
+        link: "/fees"
+    },
+    {
+        name: "Event Partners",
+        link: "/partners"
+    }
+] 
+
 export const eventData = [
     {
         name: "Increased Visibility and Ease of Discovery",

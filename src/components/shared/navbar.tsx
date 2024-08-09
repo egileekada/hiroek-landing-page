@@ -1,5 +1,5 @@
 
-import { navlink } from '../constant'
+import { navlink, navlinkmobile } from '../constant'
 import { CustomButton } from '.'
 import { CloseIcon, Touch } from '../svg'
 import { Popover } from '@radix-ui/themes'
@@ -127,7 +127,7 @@ export default function Navbar() {
                     </Popover.Trigger>
                     <Popover.Content maxWidth={"300px"}>
                         <div className=' flex flex-col w-fit gap-4 ' >
-                            {navlink.map((item, index) => {
+                            {navlinkmobile.map((item, index) => {
                                 return (
                                     <div key={index} className='' role='button' >
                                         <a href={item?.link} onClick={() => setShow(false)} className=' text-[#37137F] text-lg lg:leading-[20px] font-black ' >{item?.name}</a>
