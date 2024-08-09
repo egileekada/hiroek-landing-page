@@ -1,5 +1,5 @@
 
-import { navlink, navlinkmobile } from '../constant'
+import { navlink } from '../constant'
 import { CustomButton } from '.'
 import { CloseIcon, Touch } from '../svg'
 import { Popover } from '@radix-ui/themes'
@@ -109,7 +109,7 @@ export default function Navbar() {
 
                             return (
                                 <a href={item?.link} key={index} className='  h-full text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center ' role='button' >
-                                    <p  className=' leading-[20px] font-black ' >{item?.name}</p>
+                                    <p className=' leading-[20px] font-black ' >{item?.name}</p>
                                 </a>
                             )
                         }
@@ -119,20 +119,38 @@ export default function Navbar() {
                         Login
                     </div> */}
                 </div>
-                <Popover.Root  open={show} onOpenChange={setShow} >
+                <Popover.Root open={show} onOpenChange={setShow} >
                     <Popover.Trigger>
                         <button role='button' onClick={() => setShow(true)} className=' text-primary lg:hidden ' >
                             <IoMenu size={"35px"} />
                         </button>
                     </Popover.Trigger>
-                    <Popover.Content maxWidth={"300px"}>
-                        <div className=' flex flex-col w-fit gap-4 ' >
-                            {navlinkmobile.map((item, index) => {
-                                return (
-                                    <div key={index} className='' role='button' >
-                                        <a href={item?.link} onClick={() => setShow(false)} className=' text-[#37137F] text-lg lg:leading-[20px] font-black ' >{item?.name}</a>
-                                    </div>
-                                )
+                    <Popover.Content maxWidth={"500px"}>
+                        <div className=' flex flex-col w-full gap-6 ' >
+                            {navlink.map((item, index) => {
+                                if (item?.name === "About Us") {
+                                    return (
+                                        <div key={index} className=' flex gap-4 flex-col ' role='button' >
+                                            <p role='button' onClick={() => setShowLink((prev) => !prev)} className=' text-[#37137F] text-lg lg:leading-[20px] font-semibold ' >{item?.name}</p>
+                                            {showLink && (
+                                                <div className=' w-full flex flex-col gap-5 ' >
+                                                    <a href='/about-us' className='  text-[#37137F] pl-2 font-semibold ' >
+                                                        Why Hiroek?
+                                                    </a>
+                                                    <a href='/mission' className=' rounded-b-lg  text-[#37137F] pl-2 font-semibold ' >
+                                                        Our Mission
+                                                    </a>
+                                                </div>
+                                            )}
+                                        </div>
+                                    )
+                                } else {
+                                    return (
+                                        <div key={index} className='' role='button' >
+                                            <a href={item?.link} onClick={() => setShow(false)} className=' text-[#37137F] text-lg lg:leading-[20px] font-semibold ' >{item?.name}</a>
+                                        </div>
+                                    )
+                                }
                             })}
                             <GetInTouch />
                             {/* <div role='button' className=' h-[40px] bordergradient text-base font-bold px-6 rounded-[10px] flex justify-center items-center text-[#37137F] ' >
