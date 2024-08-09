@@ -8,7 +8,7 @@ export default function SectionB() {
                 {/* <p className=' text-lg relative z-10 lg:text-[26px] lg:leading-[39px] max-w-[1050px] ' >Say goodbye to endless emails, chat messages and google search for events. Carve out a space in real life where your community members feel they belong.</p> */}
                 <p className=' text-lg relative z-10 lg:text-[26px] lg:leading-[39px] max-w-[1150px] ' >We know that setting up events, coordinating members, collaborations, communication, and collecting donations takes precious time. We’re here to make your life easier and take the weight off your shoulders, so you can continue to focus on what matters.</p>
             </div>
-            <img alt="bluestroke" src="/images/bluestroke.png" className=" object-cover inset-0 absolute opacity-5 w-full h-full " />
+            <img alt="aboutbg" src="/images/aboutbg.png" className=" absolute inset-0 w-full h-full object-cover " />
         </div>
     )
 }

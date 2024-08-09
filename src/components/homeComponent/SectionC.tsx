@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { CustomButton } from "../shared";
-import { Forwardarrow } from "../svg";
+// import { CustomButton } from "../shared";
+// import { Forwardarrow } from "../svg";
 import { motion, useInView } from "framer-motion";
 
 
@@ -24,9 +24,9 @@ export default function ThirdSection() {
                 <div className=" max-w-[544px] relative z-10 flex flex-col gap-3 pb-28  " >
                     <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black " >Effortless <br /> Event Creation</p>
                     <p className=" xl:text-2xl text-[#424242] !font-axiformamedium " >With Hiroek, planning and organising events is streamlined and intuitive, saving you valuable time.</p>
-                    <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
+                    {/* <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrow />
-                    } />
+                    } /> */}
                 </div>
             </div>
 

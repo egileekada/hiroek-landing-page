@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import CustomButton from "../shared/customButton";
-import { Forwardarrow } from "../svg";
+// import CustomButton from "../shared/customButton";
+// import { Forwardarrow } from "../svg";
 import { motion, useInView } from "framer-motion";
 
 
@@ -38,9 +38,9 @@ export default function FifthSection() {
                 <div className=" lg:max-w-[500px] lg:relative lg:z-0 z-10 flex flex-col gap-3 " >
                     <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black " >Discover <br /> your tribe!</p>
                     <p className=" lg:text-2xl text-[#424242] font-axiformamedium " >Hiroek makes inviting and connecting  your friends to your events easy. </p>
-                    <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
+                    {/* <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrow />
-                    } />
+                    } /> */}
                 </div>
             </div>
             <img alt="whitestroke" src="/images/whitestroke.png" className=" object-cover inset-0 absolute h-full w-full opacity-5 " />

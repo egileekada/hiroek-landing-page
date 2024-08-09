@@ -1,8 +1,8 @@
 
 import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
-import { CustomButton } from '../shared'
-import { Forwardarrow } from '../svg'
+// import { CustomButton } from '../shared'
+// import { Forwardarrow } from '../svg'
 
 export default function SeventhSection() {
 
@@ -38,9 +38,9 @@ export default function SeventhSection() {
                 <div className=" lg:max-w-[500px] relative z-10 flex flex-col gap-3 " >
                     <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black " >SMART <br /> PROFILE</p>
                     <p className=" xl:text-2xl text-[#424242] font-axiformamedium " >create and support donations for up to 5 charitable causes at once.</p>
-                    <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
+                    {/* <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrow />
-                    } />
+                    } /> */}
                 </div>
             </div>
             <img alt="whitestroke" src="/images/whitestroke.png" className=" object-cover inset-0 absolute h-full w-full opacity-5 " />

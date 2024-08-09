@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
-import { CustomButton } from "../shared";
-import { Forwardarrow } from "../svg";
+// import { CustomButton } from "../shared";
+// import { Forwardarrow } from "../svg";
 import { useRef } from "react";
 
 
@@ -28,9 +28,9 @@ export default function SixthSection() {
                 <div className=" max-w-[500px] relative z-10 flex flex-col gap-3 " >
                     <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black " >SUPPORT <br /> CAUSES <br /> SEAMLESSLY </p>
                     <p className=" xl:text-2xl font-axiformamedium ">Advocate for and support your favourite causes with ease, integrating them into your events without additional steps, making the process as smooth and efficient as possible.</p>
-                    <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#DF6951] !text-white font-bold !w-fit !shadow-lg " icon={
+                    {/* <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#DF6951] !text-white font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrow />
-                    } />
+                    } /> */}
                 </div>
             </div>
             <img alt="bluestroke" src="/images/bluestroke.png" className=" object-cover inset-0 z-[2] absolute opacity-[0.03] w-full h-full " />

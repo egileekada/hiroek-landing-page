@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import { CustomButton } from '../shared'
-import { Forwardarrow } from '../svg'
+// import { CustomButton } from '../shared'
+// import { Forwardarrow } from '../svg'
 import { motion, useInView } from 'framer-motion';
 
 export default function FortySection() {
@@ -16,9 +16,9 @@ export default function FortySection() {
                     <p className=' max-w-[403px] text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black ' >Instant Community Building</p>
                     <p className=' xl:text-2xl font-axiformamedium ' >Quickly connect with like-minded individuals and build a community around an event or topic without the usual complexities, allowing you to focus on what truly matters.</p>
                 <p className=' xl:text-2xl font-axiformamedium  ' >Incorporated messaging and interaction features ensures you remain connected on and offline.</p>
-                    <CustomButton text="Get Started" size={"4"} type="button" className=" !bg-[#DF6951] !text-white font-bold !w-fit !shadow-lg " icon={
+                    {/* <CustomButton text="Get Started" size={"4"} type="button" className=" !bg-[#DF6951] !text-white font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrow />
-                    } />
+                    } /> */}
                 </div>
             </div> 
             <div  className=' w-full lg:flex hidden rotate-[15deg] justify-center lg:px-0 px-6  ' >
