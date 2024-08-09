@@ -18,12 +18,12 @@ export default function Footer() {
                         <p className=" text-lg font-medium " >Create Impactful Events, Cultivate A Supportive Community, & Passionately Champion Causes That Are Closest to Your Heart</p>
 
                         <div className=" flex lg:flex-row flex-col gap-3 " >
-                            <div role="button" className="w-[187.45px] " >
+                            <a href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" target="_blank" className="w-[187.45px] " >
                                 <GooglePlay />
-                            </div>
-                            <div role="button" className=" w-[187.45px]" >
+                            </a>
+                            <a href="https://apps.apple.com/ng/app/hiroek/id6474194083" target="_blank"  className=" w-[187.45px]" >
                                 <AppleStore />
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div className=" flex flex-col gap-6 pt-2 " >

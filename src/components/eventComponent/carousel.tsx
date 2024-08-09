@@ -76,7 +76,7 @@ export default function Carousel() {
                     }
                 })}
                 <div className=" w-full flex absolute bottom-0 justify-between z-[12] items-center " >
-                    <div  onClick={() => clickHandler(isShown - 1)} role="button" className=" relative -z2 " >
+                    <div  onClick={() => clickHandler(isShown - 1)} role="button" className="  w-[45px] lg:w-[64px]  relative -z2 " >
                         <CarouselLeftArrow />
                     </div>
                     <div className=" flex gap-2" >
@@ -84,7 +84,7 @@ export default function Carousel() {
                             <motion.div {...boxAnimation} key={item?.name} className={` bg-[#37137F] ${index === isShown ? " w-[40px] " : " w-[10px] bg-opacity-30"}  h-[10px] rounded-[44px] `} />
                         ))}
                     </div>
-                    <div  onClick={() => clickHandler(isShown + 1)} role="button" className=" " >
+                    <div  onClick={() => clickHandler(isShown + 1)} role="button" className=" w-[45px] lg:w-[64px] " >
                         <CarouselRightArrow />
                     </div>
                 </div>

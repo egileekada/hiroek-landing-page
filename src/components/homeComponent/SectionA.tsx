@@ -55,12 +55,12 @@ export default function FirstSection() {
                         <Forwardarrow />
                     } /> */}
                     <div className=" flex gap-4 lg:items-center mt-6 " >
-                        <div role="button" className=' w-full lg:w-[187.45px] ' >
+                        <a href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" target="_blank" className=' w-full lg:w-[187.45px] ' >
                             <GooglePlay />
-                        </div>
-                        <div role="button" className=' w-full lg:w-[187.45px] ' >
+                        </a>
+                        <a href="https://apps.apple.com/ng/app/hiroek/id6474194083" target="_blank" className=' w-full lg:w-[187.45px] ' >
                             <AppleStore />
-                        </div>
+                        </a>
                     </div>
                 </div> 
 

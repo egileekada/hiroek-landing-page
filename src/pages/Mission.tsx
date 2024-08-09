@@ -1,5 +1,5 @@
 
-import { FirstMissionSection, ForthAboutSection, SecondMissionSection, ThirdMissionSection } from '../components/aboutComponent'
+import { FirstMissionSection, SecondMissionSection, ThirdMissionSection } from '../components/aboutComponent'
 
 export default function Mission() {
     return (
@@ -7,7 +7,7 @@ export default function Mission() {
             <FirstMissionSection />
             <SecondMissionSection />
             <ThirdMissionSection />
-            <ForthAboutSection />
+            {/* <ForthAboutSection /> */}
         </div>
     )
 }
