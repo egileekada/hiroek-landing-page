@@ -69,7 +69,7 @@ export default function Carousel() {
                                 <div key={index} className=" flex flex-col lg:text-right lg:items-end lg:max-w-[80%] gap-6 " >
                                     <motion.p {...boxAnimation} className=" text-3xl lg:text-[50px] lg:leading-[60px]" >{item?.name}</motion.p>
                                     <motion.p {...boxAnimation} className=" whitespace-pre-line text-[#424242] lg:text-2xl lg:leading-[36px] " >{item?.detail}</motion.p>
-                                    <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80", background: "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text="Get Started" size={"4"} type="button" className="  cursor-pointer lg:ml-auto !text-white font-bold !w-fit !shadow-lg " icon={
+                                    <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80", background: "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text="Activate your account" size={"4"} type="button" className="  cursor-pointer lg:ml-auto !text-white font-bold !w-fit !shadow-lg " icon={
                                         <Forwardarrow />
                                     } />
                                 </div>
