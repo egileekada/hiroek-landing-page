@@ -19,7 +19,7 @@ export const navlink = [
 
 export const navlinkmobile = [
     {
-        name: "About Us",
+        name: "Why Hiroek",
         link: "/about-us"
     },
     {

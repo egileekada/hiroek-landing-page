@@ -119,7 +119,7 @@ export default function Navbar() {
                         Login
                     </div> */}
                 </div>
-                <Popover.Root open={show} >
+                <Popover.Root  open={show} onOpenChange={setShow} >
                     <Popover.Trigger>
                         <button role='button' onClick={() => setShow(true)} className=' text-primary lg:hidden ' >
                             <IoMenu size={"35px"} />

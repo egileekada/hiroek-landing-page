@@ -66,7 +66,7 @@ export function Touch() {
 
 export function GooglePlay() {
     return (
-        <svg width="188" height="56" viewBox="0 0 188 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <svg className=" w-full " viewBox="0 0 188 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <rect width="187.45" height="55.98" fill="url(#pattern0_1267_23)" />
             <defs>
                 <pattern id="pattern0_1267_23" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -88,7 +88,7 @@ export function CloseIcon() {
 
 export function AppleStore() {
     return (
-        <svg width="188" height="56" viewBox="0 0 188 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <svg className=" w-full " viewBox="0 0 188 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <rect width="188" height="55.98" transform="translate(0.450012)" fill="url(#pattern0_1267_25)" />
             <defs>
                 <pattern id="pattern0_1267_25" patternContentUnits="objectBoundingBox" width="1" height="1">

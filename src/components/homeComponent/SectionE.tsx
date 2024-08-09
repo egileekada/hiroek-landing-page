@@ -10,7 +10,7 @@ export default function FifthSection() {
     const isInView = useInView(ref);
 
     return (
-        <div className=" bg-[#F0F2FF] text-[#37137F] relative z-10 !font-bold lg:px-6 gap-10 w-full flex lg:flex-row flex-col justify-center py-24 " >
+        <div className=" bg-[#F0F2FF] text-[#37137F] relative z-10 !font-bold lg:px-6 gap-10 w-full flex lg:flex-row flex-col justify-center pt-14 lg:py-24 " >
             <div  ref={ref} />
             <div className=" w-full justify-end lg:flex hidden relative lg:h-auto h-[250px] lg:px-0 px-6 " >
                 <motion.div className="origin-bottom-left absolute top-0 w-[50%] lg:w-[350px]" animate={{
@@ -34,7 +34,7 @@ export default function FifthSection() {
                     <img alt="one" src="/images/animation/Event5.png" className=" absolute top-0 lg:w-auto w-full " />
                 </div>
             </div>
-            <div className="  w-full relative z-10 flex bg-[#F0F2FF] lg:h-[350px] pt-6 lg:px-0 px-6 " >
+            <div className="  w-full relative z-10 flex bg-[#F0F2FF] h-[200px] lg:h-[350px] pt-6 lg:px-0 px-6 " >
                 <div className=" lg:max-w-[500px] lg:relative lg:z-0 z-10 flex flex-col gap-3 " >
                     <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black " >Discover <br /> your tribe!</p>
                     <p className=" lg:text-2xl text-[#424242] font-axiformamedium " >Hiroek makes inviting and connecting  your friends to your events easy. </p>

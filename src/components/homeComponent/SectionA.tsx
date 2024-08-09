@@ -51,14 +51,14 @@ export default function FirstSection() {
                     {/* <p className=" text-xl tracking-[8px] ">connect, empower, inspire</p> */}
                     <p className=" text-2xl xl:text-[56px] uppercase lg:text-[45px] xl:leading-[60px] lg:leading-[50px] " >Connect with friends, Create Impactful Events, and Champion Causes Dear To You.</p>
                     {/* <p className=" xl:text-2xl mb-5 axiforma-black " >Create Impactful Events, Cultivate A Supportive Community, & Passionately Champion Causes That Are Closest to Your Heart</p> */}
-                    <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !mt-6 !text-white font-bold !w-fit !shadow-lg " icon={
+                    {/* <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !mt-6 !text-white font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrow />
-                    } />
-                    <div className=" flex lg:flex-row flex-col gap-4 lg:items-center mt-5 " >
-                        <div role="button" >
+                    } /> */}
+                    <div className=" flex gap-4 lg:items-center mt-6 " >
+                        <div role="button" className=' w-full lg:w-[187.45px] ' >
                             <GooglePlay />
                         </div>
-                        <div role="button" >
+                        <div role="button" className=' w-full lg:w-[187.45px] ' >
                             <AppleStore />
                         </div>
                     </div>

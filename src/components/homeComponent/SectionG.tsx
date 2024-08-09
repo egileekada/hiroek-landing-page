@@ -34,7 +34,7 @@ export default function SeventhSection() {
                     <img alt="one" src="/images/animation/Event8.png" className=" absolute w-full top-0 z-0 " />
                 </div>
             </div>
-            <div className=' w-full h-[280px] lg:h-[350px] lg:bg-transparent bg-secondary relative z-10 lg:px-0 px-6 pt-4 ' > 
+            <div className=' w-full h-[100px] lg:h-[350px] lg:bg-transparent bg-secondary relative z-10 lg:px-0 px-6 pt-4 ' > 
                 <div className=" lg:max-w-[500px] relative z-10 flex flex-col gap-3 " >
                     <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black " >SMART <br /> PROFILE</p>
                     <p className=" xl:text-2xl text-[#424242] font-axiformamedium " >create and support donations for up to 5 charitable causes at once.</p>

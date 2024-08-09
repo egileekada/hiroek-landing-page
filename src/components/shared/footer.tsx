@@ -18,10 +18,10 @@ export default function Footer() {
                         <p className=" text-lg font-medium " >Create Impactful Events, Cultivate A Supportive Community, & Passionately Champion Causes That Are Closest to Your Heart</p>
 
                         <div className=" flex lg:flex-row flex-col gap-3 " >
-                            <div role="button" className=" " >
+                            <div role="button" className="w-[187.45px] " >
                                 <GooglePlay />
                             </div>
-                            <div role="button" className=" " >
+                            <div role="button" className=" w-[187.45px]" >
                                 <AppleStore />
                             </div>
                         </div>
