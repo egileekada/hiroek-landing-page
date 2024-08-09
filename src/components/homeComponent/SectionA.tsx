@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { CustomButton } from "../shared";
-import { AppleStore, Forwardarrow, GooglePlay } from "../svg";
+// import { CustomButton } from "../shared";
+import { AppleStore, GooglePlay } from "../svg";
 import { useEffect, useState } from "react";
 
 
