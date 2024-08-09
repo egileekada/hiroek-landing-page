@@ -3,10 +3,10 @@ import { navlink } from '../constant'
 import { CustomButton } from '.'
 import { CloseIcon, Touch } from '../svg'
 import { Popover } from '@radix-ui/themes'
-import { IoArrowBackSharp, IoArrowDown, IoMenu } from 'react-icons/io5'
+import { IoMenu } from 'react-icons/io5'
 import * as Dialog from '@radix-ui/react-dialog';
 import { useState } from 'react'
-import { IoIosArrowDown, IoIosArrowUp, IoMdArrowDown } from 'react-icons/io'
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
 
 export default function Navbar() {
 
