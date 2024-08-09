@@ -6,15 +6,15 @@ export default function SectionD() {
                 <p className=' text-3xl lg:text-[44px] font-black' >{`How it's going so far`}</p>
                 <div className=' w-full flex lg:flex-row flex-col lg:justify-between gap-10 ' >
                     <div className=" text-center flex flex-col items-center " >
-                        <p className=" text-[72px] leading-[72px] font-black " >1.2k+</p>
+                        <p className=" text-6xl lg:text-[72px] lg:leading-[72px] font-black " >1.2k+</p>
                         <p className=" text-[28px] font-axiformaregular " >Campaigns/Events</p>
                     </div>
                     <div className=" text-center flex flex-col items-center " >
-                        <p className=" text-[72px] leading-[72px] font-black " >£1m+</p>
+                        <p className=" text-6xl lg:text-[72px] lg:leading-[72px] font-black " >£1m+</p>
                         <p className=" text-[28px] font-axiformaregular " >Raised</p>
                     </div>
                     <div className=" text-center flex flex-col items-center " >
-                        <p className=" text-[72px] leading-[72px] font-black " >100k+</p>
+                        <p className=" text-6xl lg:text-[72px] lg:leading-[72px] font-black " >100k+</p>
                         <p className=" text-[28px] font-axiformaregular " >Donations made</p>
                     </div>
                 </div>
