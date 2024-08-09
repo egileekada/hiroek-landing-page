@@ -10,7 +10,7 @@ export default function FortySection() {
 
     return (
         <div className=' text-[#F0F2FF] !font-bold gap-10 relative z-10 rounded-t-[#F0F2FF] w-full flex lg:flex-row bg-primary flex-col-reverse justify-center pt-16 lg:py-24 ' >
-            <div  ref={ref} />
+            
             <div className=' w-full flex justify-end bg-primary relative lg:z-0 lg:pt-0 pt-4 z-[15] lg:px-0 lg:h-auto h-[280px]  px-6 ' >
                 <div className=' max-w-[508px] relative z-10 flex flex-col gap-3 ' >
                     <p className=' max-w-[403px] text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black ' >Instant Community Building</p>
@@ -21,6 +21,7 @@ export default function FortySection() {
                     } /> */}
                 </div>
             </div> 
+            <div  ref={ref} />
             <div  className=' w-full lg:flex hidden rotate-[15deg] justify-center lg:px-0 px-6  ' >
                 <div className=' lg:w-[350px] relative ' > 
                     <div className=' lg:w-[350px] w-full relative z-20 lg:block flex justify-center lg:absolute top-0  ' >
