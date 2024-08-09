@@ -28,16 +28,16 @@ export default function Footer() {
                     </div>
                     <div className=" flex flex-col gap-6 pt-2 " >
                         <p className=" font-extrabold text-xl font-axiformablack " >Product</p>
-                        <a className=" font-medium text-lg  " >FAQs</a>
+                        {/* <a className=" font-medium text-lg  " >FAQs</a> */}
                         <a href="/terms" className=" font-medium text-lg  " >Terms & Conditions</a>
                         <a href="/policy" className=" font-medium text-lg  " >Privacy Policy</a>
                     </div>
-                    <div className=" flex flex-col gap-6 pt-2 " >
+                    {/* <div className=" flex flex-col gap-6 pt-2 " >
                         <p className=" font-extrabold text-xl font-axiformablack " >Company</p>
                         <a className=" font-medium text-lg  " >Why Hiroek?</a>
                         <a className=" font-medium text-lg  " >Careers</a>
                         <a className=" font-medium text-lg  " >Accessibility Statement</a>
-                    </div>
+                    </div> */}
                     <div className=" flex flex-col gap-3 " >
                         <Chartered />
                         <p className=" font-bold text-xl " >Follow Us On Social Media</p>
