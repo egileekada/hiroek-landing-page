@@ -12,7 +12,7 @@ export const navlink = [
         link: "/fees"
     },
     {
-        name: "Event Partners",
+        name: "Partners",
         link: "/partners"
     }
 ]

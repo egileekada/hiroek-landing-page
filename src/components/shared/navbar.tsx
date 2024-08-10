@@ -88,11 +88,16 @@ export default function Navbar() {
                         if (item?.name === "About Us") {
                             return (
                                 <div className=' relative h-full ' >
-                                    <div onClick={() => setShowLink((prev) => !prev)} key={index} className={` ${showLink ? "bg-gradient-to-b from-[#37137F] to-[#8C43FE] text-white" : ""} h-full text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center `} role='button' >
+                                    <div onClick={() => setShowLink((prev) => !prev)} key={index} className={` ${showLink ? "bg-gradient-to-b from-[#37137F] to-[#8C43FE] text-white" : ""} h-full text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center gap-3 items-center `} role='button' >
                                         <a className=' leading-[20px] font-black ' >{item?.name}</a>
+                                        {!showLink ? (
+                                            <IoIosArrowDown />
+                                        ) : (
+                                            <IoIosArrowUp />
+                                        )}
                                     </div>
                                     {showLink && (
-                                        <div className=' absolute top-[92px] -left-[50%] rounded-b-lg w-[200px] h-fit bg-secondary z-50 ' >
+                                        <div className=' absolute top-[92px] -left-[25%] rounded-b-lg w-[200px] h-fit bg-secondary z-50 ' >
                                             <a href='/about-us' className='  h-[70px] text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center ' >
                                                 Why Hiroek?
                                             </a>
@@ -132,7 +137,7 @@ export default function Navbar() {
                                 if (item?.name === "About Us") {
                                     return (
                                         <div key={index} className=' flex gap-4 flex-col ' role='button' >
-                                            <div role='button' onClick={() => setShowLink((prev) => !prev)} className=' flex items-center w-full justify-between ' > 
+                                            <div role='button' onClick={() => setShowLink((prev) => !prev)} className=' flex items-center w-full justify-between ' >
                                                 <p className=' text-[#37137F] text-lg lg:leading-[20px] font-semibold ' >{item?.name}</p>
                                                 {!showLink ? (
                                                     <IoIosArrowDown />

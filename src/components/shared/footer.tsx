@@ -58,7 +58,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className=" py-4 w-full flex justify-center items-center border-t border-[#2E4E73] " >
-                    <p className=" font-medium " >All Rights Reserved  © {new Date().getFullYear()} Hiroek</p>
+                    <p className=" font-medium " >MyHero Ltd {new Date().getFullYear()}. All right reserved</p>
                 </div>
             </div>
             <div className=" w-full h-full absolute inset-0 " > 
