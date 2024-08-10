@@ -165,7 +165,7 @@ export default function Navbar() {
                                     )
                                 }
                             })}
-                            <GetInTouch />
+                            {/* <GetInTouch /> */}
                             {/* <div role='button' className=' h-[40px] bordergradient text-base font-bold px-6 rounded-[10px] flex justify-center items-center text-[#37137F] ' >
                                 Login
                             </div> */}
