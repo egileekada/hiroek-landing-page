@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { NinethSection } from "../homeComponent";
 import { AppleStore, Chartered, GooglePlay, Instagram, Tiktok, Twitter, Youtube } from "../svg";
+import GetInTouch from "./GetInTouch";
 
 
 export default function Footer() {
 
     const location = window.location.href; 
+    const [open, setOpen] = useState(false)
     
     return (
         <div className=" w-full flex flex-col relative " >
@@ -31,6 +34,7 @@ export default function Footer() {
                         {/* <a className=" font-medium text-lg  " >FAQs</a> */}
                         <a href="/terms" className=" font-medium text-lg  " >Terms & Conditions</a>
                         <a href="/policy" className=" font-medium text-lg  " >Privacy Policy</a>
+                        <GetInTouch text={true} open={open} setOpen={setOpen} />
                     </div>
                     {/* <div className=" flex flex-col gap-6 pt-2 " >
                         <p className=" font-extrabold text-xl font-axiformablack " >Company</p>
