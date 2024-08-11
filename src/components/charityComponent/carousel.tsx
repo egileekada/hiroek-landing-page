@@ -59,13 +59,13 @@ export default function Carousel() {
                 </div>
             </div>
             <div className=" w-full flex lg:flex-row flex-col relative py-14 gap-8 px-6 lg:px-12  " >
-                <div className=" w-full lg:h-[600px] relative lg:pl-0 pl-6 " >
+                <div className=" w-full lg:h-[600px] h-[200px] relative lg:pl-0 pl-6 " >
                     {charityData?.map((item, index: any) => {
                         return (
                             <AnimatePresence key={item?.img} >
                                 {index === isShown &&
-                                    <motion.div {...boxAnimation} style={{ width: "100%", position: "absolute", inset: "0px", objectFit: "cover" }} className=" flex lg:justify-center lg:h-[600px] h-[300px] g:items-center " >
-                                        <img alt={item?.name} src={item?.img} className=" lg:object-contain object-fill h-[300px] lg:h-auto lg:w-full " />
+                                    <motion.div {...boxAnimation} style={{ width: "100%", position: "absolute", inset: "0px", objectFit: "cover" }} className=" flex justify-center lg:h-[600px] h-auto lg:items-center " >
+                                        <img alt={item?.name} src={item?.img} className=" lg:object-contain object-contain h-auto lg:h-auto lg:w-full " />
                                     </motion.div>
                                 }
                             </AnimatePresence>
