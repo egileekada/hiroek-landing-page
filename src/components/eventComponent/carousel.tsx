@@ -54,7 +54,7 @@ export default function Carousel() {
             <div className=" w-full lg:h-[600px] h-[300px] relative z-10 lg:rounded-[120px] " >
                 {eventData?.map((item, index: any) => {
                     return (
-                        <AnimatePresence key={index} >
+                        <AnimatePresence key={item?.img} >
                             {index === isShown &&
                                 <motion.div {...boxAnimation} style={{ width: "100%",position: "absolute", inset: "0px", objectFit: "cover" }} className=" flex lg:justify-center lg:h-[600px] h-[300px] lg:rounded-[120px] lg:items-center " >
                                     <img alt={item?.name} src={item?.img} className=" lg:rounded-[120px] lg:object-cover object-fill h-[300px] lg:h-auto lg:w-full " />

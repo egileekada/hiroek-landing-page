@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CarouselLeftArrow, CarouselRightArrow, Forwardarrow, UnderLineIcon } from "../svg";
 import { charityData } from "../constant";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { CustomButton } from "../shared";
 
 
@@ -59,14 +59,24 @@ export default function Carousel() {
                 </div>
             </div>
             <div className=" w-full flex lg:flex-row flex-col relative py-14 gap-8 px-6 lg:px-12  " >
-                <div className=" w-full lg:h-[600px] lg:pl-0 pl-6 " >
-                    <img alt={"carousel"} src={"/images/laptop.png"} className="lg:absolute object-cover bottom-10 lg:max-w-[900px] " />
+                <div className=" w-full lg:h-[600px] relative lg:pl-0 pl-6 " >
+                    {charityData?.map((item, index: any) => {
+                        return (
+                            <AnimatePresence key={item?.img} >
+                                {index === isShown &&
+                                    <motion.div {...boxAnimation} style={{ width: "100%", position: "absolute", inset: "0px", objectFit: "cover" }} className=" flex lg:justify-center lg:h-[600px] h-[300px] g:items-center " >
+                                        <img alt={item?.name} src={item?.img} className=" lg:object-contain object-fill h-[300px] lg:h-auto lg:w-full " />
+                                    </motion.div>
+                                }
+                            </AnimatePresence>
+                        )
+                    })}
                 </div>
                 <div className=" w-full lg:h-[600px] h-fit flex lg:relative lg:items-center lg:justify-center flex-col gap-6  " >
                     {charityData?.map((item, index) => {
                         if (index === isShown) {
                             return (
-                                <div key={index} className=" flex flex-col lg:text-right lg:items-end lg:max-w-[80%] gap-6 " >
+                                <div key={item?.img} className=" flex flex-col lg:text-right lg:items-end lg:max-w-[80%] gap-6 " >
                                     <motion.p {...boxAnimation} className=" text-3xl lg:text-[50px] lg:leading-[60px]" >{item?.name}</motion.p>
                                     <motion.p {...boxAnimation} className=" whitespace-pre-line text-[#424242] lg:text-2xl lg:leading-[36px] " >{item?.detail}</motion.p>
                                     <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80", background: "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text="Activate your account" size={"4"} type="button" className="  cursor-pointer lg:ml-auto !text-white font-bold !w-fit !shadow-lg " icon={
@@ -88,7 +98,7 @@ export default function Carousel() {
                         <div onClick={() => clickHandler(isShown + 1)} role="button" className=" w-[45px] lg:w-[64px] "  >
                             <CarouselRightArrow />
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
             <img alt="whitestroke" src="/images/whitestroke.png" className=" object-cover inset-0 absolute opacity-5 -z-[0] w-full h-full " />

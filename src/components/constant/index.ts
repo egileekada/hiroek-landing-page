@@ -65,39 +65,48 @@ export const eventData = [
 
 export const charityData = [
     {
+        img: "/images/carousel/1d.png",
         name: "Create and Manage Profiles",
         detail: "Create and customise profiles with interests and affiliations.", 
     }, 
     {
-        name: "Organise and Manage Events",
+        img: "/images/carousel/2d.png",
+        name: "organize and manage events",
         detail: "Hiroek provides a dynamic space for you to showcase your events, share details, and create anticipation.", 
     }, 
     {
-        name: "Track Sign-Ups",
+        img: "/images/carousel/3d.png",
+        name: "TRACK USER SIGN-UPS",
         detail: "Allow attendees to easily join via the app, streamlining the registration process.", 
     }, 
     {
-        name: "Connect Locally and Beyond",
-        detail: "Leverage the power of local and interest-based communities. Reach a diverse and engaged audience that aligns with your mission. Enable community members to connect both online and in real life.", 
+        img: "/images/carousel/4d.png",
+        name: "CONNECT LOCALLY AND BEYOND",
+        detail: "Leverage the power of local and interest based communities. Reach a diverse and engaged audience that aligns with your mission. Enable community members to connect both online and in real life.", 
     }, 
     {
-        name: "Manage Donations",
+        img: "/images/carousel/5d.png",
+        name: "MANAGE USER DONATIONS",
         detail: "Facilitate easy and secure donation processes directly through the app, empowering your supporters to contribute effortlessly.", 
     }, 
     {
-        name: "Amplify Your Message",
-        detail: "- Hiroek provides a dedicated space for you to share your mission, impact stories, and upcoming events \n - Reach a wider audience and raise awareness for your cause.", 
+        img: "/images/carousel/6d.png",
+        name: "AMPLIFY YOUR MESSAGE",
+        detail: "Hiroek provides a dedicated space for you to share your mission, impact stories, and upcoming events.\nReach a wider audience and raise awareness for your cause.", 
     }, 
     {
-        name: "Community Building",
-        detail: "- Create communities centred around specific causes or interests. \n - Foster a sense of belonging among your supporters and strengthen your network. ", 
+        img: "/images/carousel/7d.png",
+        name: "COMMUNITY BUILDING",
+        detail: "Create communities centered around specific causes or interests \nFoster a sense of belonging among your supporters and strengthen your network.", 
     }, 
+    // {
+    //     img: "/images/carousel/8d.png",
+    //     name: "Improved Communication",
+    //     detail: "Real-time Updates:  Send push notifications for important updates, changes, or reminders directly to community members and events participants.", 
+    // },
     {
-        name: "Improved Communication",
-        detail: "Real-time Updates:  Send push notifications for important updates, changes, or reminders directly to community members and events participants.", 
-    },
-    {
-        name: "Cross platform Sharing",
-        detail: "We have implemented social media integration for easy sharing, to gain more  exposure and spread your message.", 
+        img: "/images/carousel/8d.png",
+        name: "CROSS PLATFORM SHARING",
+        detail: "We have implemented social media integration for easy sharing, to gain more exposure and spread your message.", 
     }
 ]
