@@ -6,10 +6,11 @@ import { CloseIcon, Touch } from '../svg'
 interface IProps {
     open: boolean,
     setOpen: (by: boolean) => void,
-    text?: boolean
+    text?: string,
+    span?: boolean
 }
 
-export default function GetInTouch({ open, setOpen, text }: IProps) {
+export default function GetInTouch({ open, setOpen, text, span }: IProps) {
 
 
     return (
@@ -21,12 +22,18 @@ export default function GetInTouch({ open, setOpen, text }: IProps) {
                             <Touch />
                         } />
                     )}
-                    {text && (
-                        <p className=' font-medium text-lg ' >Get In Touch</p>
+                    {(text && !span) && (
+                        <div className=' items-center gap-2 flex ' >
+                            <p className=' font-medium text-lg ' >{text ? text : "Get In Touch"}</p>
+                            <Touch />
+                        </div>
+                    )}
+                    {(text && span) && (
+                        <span className=' underline '  >{text ? text : "Get In Touch"}</span>
                     )}
                 </div>
             </Dialog.Trigger>
-            
+
             <Dialog.Portal  >
                 <Dialog.Overlay onClick={() => setOpen(false)} className="DialogOverlay bg-black bg-opacity-40 " />
                 <Dialog.Content className="DialogContent relative ">
@@ -50,7 +57,7 @@ export default function GetInTouch({ open, setOpen, text }: IProps) {
                                 </div>
                             </div>
                             <div className=' flex w-full flex-col ' >
-                                <p className=' text-[#37137FBF] font-axiformamedium ' >Charity Name</p>
+                                <p className=' text-[#37137FBF] font-axiformamedium ' >Name Of Organisation</p>
                                 <div className=' border border-[#1E1E1E26] rounded-lg ' >
                                     <input className=' w-full h-[40px] rounded-lg px-4 !border border-[#1E1E1E26] ' />
                                 </div>

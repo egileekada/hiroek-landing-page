@@ -69,7 +69,7 @@ export default function Carousel() {
                     if (index === isShown) {
                         return (
                             <div key={index} className=" flex flex-col gap-6 " >
-                                <motion.p {...boxAnimation} className=" text-3xl lg:text-[55px] lg:leading-[60px]" >{item?.name}</motion.p>
+                                <motion.p {...boxAnimation} className=" text-3xl lg:text-[55px] lg:leading-[60px] capitalize " >{item?.name}</motion.p>
                                 <motion.p {...boxAnimation} className=" text-[#424242] text-lg lg:text-2xl lg:leading-[36px] " >{item?.detail}</motion.p>
                             </div>
                         )

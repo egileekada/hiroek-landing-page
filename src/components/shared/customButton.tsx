@@ -1,21 +1,23 @@
-import { Button, ButtonProps } from '@radix-ui/themes' 
+import { Button, ButtonProps } from '@radix-ui/themes'
 interface IProps {
-    type:  "button" | "submit" | "reset";
+    type: "button" | "submit" | "reset";
     text: string;
-    icon?: any; 
+    icon?: any;
 }
 
 export default function CustomButton({
     type,
     text,
     icon,
-  ...rest
-}: IProps  & ButtonProps) {
+    ...rest
+}: IProps & ButtonProps) {
 
     return (
-        <Button {...rest} type={type} >
-            <p className=' paytone-one-regular ' >{text}</p>
-            {icon}
-        </Button>
+        <div role='button' className=' !cursor-pointer relative z-20 ' > 
+            <Button {...rest} type={type} >
+                <p className=' paytone-one-regular ' >{text}</p>
+                {icon}
+            </Button>
+        </div>
     )
 }

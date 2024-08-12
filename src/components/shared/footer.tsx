@@ -34,7 +34,7 @@ export default function Footer() {
                         {/* <a className=" font-medium text-lg  " >FAQs</a> */}
                         <a href="/terms" className=" font-medium text-lg  " >Terms & Conditions</a>
                         <a href="/policy" className=" font-medium text-lg  " >Privacy Policy</a>
-                        <GetInTouch text={true} open={open} setOpen={setOpen} />
+                        <GetInTouch text={"Get In Touch"} open={open} setOpen={setOpen} />
                     </div>
                     {/* <div className=" flex flex-col gap-6 pt-2 " >
                         <p className=" font-extrabold text-xl font-axiformablack " >Company</p>
