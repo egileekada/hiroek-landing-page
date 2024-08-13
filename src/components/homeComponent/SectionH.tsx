@@ -4,9 +4,9 @@
 
 export default function EightSection() {
     return (
-        <div className=" text-[#F0F2FF] bg-[#37137F] relative z-10 overflow-y-hidden lg:px-6 !font-bold gap-10 w-full flex flex-col lg:flex-row-reverse justify-center lg:items-start items-center pt-20 pb-0 lg:py-24 " >
-            <div className=" lg:w-[350px] w-[60%] relative z-10 lg:h-auto md:h-[500px] h-[250px] lg:block flex justify-center  " >
-                <img alt="one" src="/images/6.png" className=" absolute top-0 " />
+        <div className=" text-[#F0F2FF] bg-[#37137F] relative z-10 overflow-y-hidden lg:px-6 !font-bold gap-10 w-full flex flex-col lg:flex-row-reverse justify-center lg:items-center items-center pt-20 pb-0 lg:py-24 " >
+            <div className=" lg:w-[518px] relative z-10 lg:h-auto px-6 lg:block flex justify-center  " >
+                <img alt="one" src="/images/appmission.png" className=" " />
             </div>
             <div className=" lg:max-w-[500px] relative z-10 flex lg:px-0 px-6 bg-primary pt-4 lg:h-auto h-[300px] flex-col gap-3 " >
                 <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black " >AN APP <br /> ON A MISSION! </p>
