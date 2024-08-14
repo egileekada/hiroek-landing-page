@@ -17,7 +17,7 @@ export default function FifthSection() {
                     x: isInView ? -150 : 0
                 }}
                     transition={{ duration: 0.5, delay: isInView ? 0.5 : 0 }} >
-                    <img alt="two" src="/images/animation/Event4.png" className=" w-full " />
+                    <img alt="two" src="/images/animation/Eventnew4.png" className=" w-full " />
                 </motion.div>
                 <div className=" lg:w-[350px] w-[50%] relative z-10 lg:block flex justify-center  " >
                     <img alt="one" src="/images/animation/Event5.png" className=" absolute top-0 lg:w-auto w-full " />
@@ -28,7 +28,7 @@ export default function FifthSection() {
                     x: isInView ? -80 : 0
                 }}
                     transition={{ duration: 0.5, delay: isInView ? 0.5 : 0 }} >
-                    <img alt="two" src="/images/animation/Event4.png" className=" w-full " />
+                    <img alt="two" src="/images/animation/Eventnew4.png" className=" w-full " />
                 </motion.div>
                 <div className=" lg:w-[350px] w-[60%] relative z-10 lg:block flex justify-center  " >
                     <img alt="one" src="/images/animation/Event5.png" className=" absolute top-0 lg:w-auto w-full " />

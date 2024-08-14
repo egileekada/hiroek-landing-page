@@ -1,13 +1,24 @@
-
+import { motion, useInView } from "framer-motion"; 
+import { useRef } from "react";
 
 export default function SixthSection() { 
     
+
+    const ref = useRef(null);
+    const isInView = useInView(ref);
+
     return (
         <div className=" text-[#F0F2FF] relative z-10 !font-bold gap-10 w-full  flex flex-col lg:flex-row-reverse justify-center pt-20 pb-0 " >
-            <div className=" w-full flex lg:h-auto md:h-[400px] h-[250px] lg:px-0 px-6 relative lg:pr-6 " >
-                <div className=" lg:w-full relative w-full " >
-                    <div className=" lg:w-full md:w-full w-full relative z-10 lg:block flex justify-center  " >
-                        <img alt="one" src="/images/sideimg.png" className=" lg:absolute top-0 z-0  " />
+           <div className=" w-full flex lg:h-auto md:h-[400px] h-[250px] lg:px-0 px-6 relative " >
+                <div className=" lg:w-[350px] relative w-full " >
+                    <motion.div ref={ref} className="origin-bottom-right absolute z-10 top-0 lg:w-[350px] md:w-[40%] w-[60%]" animate={{
+                       rotate: isInView ? 25 : 0
+                    }}
+                        transition={{ duration: 0.5, delay: isInView ? 0.5 : 0 }} >
+                        <img alt="two" src="/images/animation/Event10.png" className=" w-full  " />
+                    </motion.div>
+                    <div className=" lg:w-[350px] md:w-[40%] w-[60%] relative z-10 lg:block flex justify-center  " >
+                        <img alt="one" src="/images/animation/Event6.png" className=" lg:absolute top-0 z-0  " />
                     </div>
                 </div>
             </div>
