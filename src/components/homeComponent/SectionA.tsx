@@ -10,7 +10,11 @@ export default function FirstSection() {
     const data = [
         "/images/bg1.png", 
         "/images/bg2.png", 
-        "/images/bg3.png"
+        "/images/bg3.png", 
+        "/images/bg4.jpg", 
+        "/images/bg5.webp", 
+        "/images/bg6.jpg", 
+        "/images/bg7.webp"
     ]
 
     const boxAnimation = {

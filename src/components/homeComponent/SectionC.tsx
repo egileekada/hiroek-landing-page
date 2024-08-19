@@ -20,7 +20,7 @@ export default function ThirdSection() {
                 </motion.div> 
                 <img alt="one" src="/images/animation/Event1.png" className="absolute w-[55%] lg:w-[350px] object-fill ml-auto object-top top-0 z-[2]  " /> 
             </div>
-            <div className=" w-full bg-[#F0F2FF] relative lg:z-0 z-[5] lg:h-auto h-[230px] lg:px-0  px-6 pt-4 lg:pt-0  " >
+            <div className=" w-full bg-[#F0F2FF] relative lg:z-0 z-[5] lg:h-[400px] h-[230px] lg:px-0  px-6 pt-4 lg:pt-0  " >
                 <div className=" max-w-[544px] relative z-10 flex flex-col gap-3 pb-28  " >
                     <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black " >Effortless <br /> Event Creation</p>
                     <p className=" xl:text-2xl text-[#424242] !font-axiformamedium " >With Hiroek, planning and organising events is streamlined and intuitive, saving you valuable time.</p>
