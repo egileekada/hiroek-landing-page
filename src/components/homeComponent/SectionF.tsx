@@ -12,7 +12,7 @@ export default function SixthSection() {
            <div className=" w-full flex lg:h-auto md:h-[400px] h-[250px] lg:px-0 px-6 relative " >
                 <div className=" lg:w-[350px] relative w-full " >
                     <motion.div ref={ref} className="origin-bottom-right absolute z-10 top-0 lg:w-[350px] md:w-[40%] w-[60%]" animate={{
-                       rotate: isInView ? 25 : 0
+                       rotate: isInView ? 30 : 0
                     }}
                         transition={{ duration: 0.5, delay: isInView ? 0.5 : 0 }} >
                         <img alt="two" src="/images/animation/Event10.png" className=" w-full  " />

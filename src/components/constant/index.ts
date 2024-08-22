@@ -76,7 +76,7 @@ export const charityData = [
     }, 
     {
         img: "/images/carousel/3d.png",
-        name: "TRACK USER SIGN-UPS",
+        name: "TRACK USER \n SIGN-UPS",
         detail: "Allow attendees to easily join via the app, streamlining the registration process.", 
     }, 
     {
