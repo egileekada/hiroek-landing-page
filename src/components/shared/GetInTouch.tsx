@@ -6,7 +6,7 @@ import CustomInput from './customInput';
 import toast from "react-hot-toast";   
 import { useMutation } from 'react-query';
 import httpService from '../../services/httpService';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface IProps {
     open: boolean,
@@ -23,7 +23,12 @@ export default function GetInTouch({ open, setOpen, text, span }: IProps) {
     const [email, setEmail] = useState("")
     const [fullname, setFullname] = useState("")
     const [organizationName, setOrganizationName] = useState("")
+    const [error, setError] = useState(false)
     const [message, setMessage] = useState("")
+
+    useEffect(()=> {
+        setError(false)
+    }, [open])
 
 
     const { mutate, isLoading } = useMutation({
@@ -50,14 +55,19 @@ export default function GetInTouch({ open, setOpen, text, span }: IProps) {
 
     const submit = () => {
         if(!email) {
-            toast.error("Enter Email")
+            // toast.error("Enter Email")
+            setError(true)
         } else if(!fullname){
-            toast.error("Enter Full Name")
+            // toast.error("Enter Full Name")
+            setError(true)
         }else if(!organizationName){
-            toast.error("Enter Organization Name")
+            // toast.error("Enter Organization Name")
+            setError(true)
         }else if(!message){
-            toast.error("Enter Message")
+            // toast.error("Enter Message")
+            setError(true)
         } else {
+            setError(false)
             mutate()
         }
     }
@@ -78,7 +88,7 @@ export default function GetInTouch({ open, setOpen, text, span }: IProps) {
             {/* </div> */} 
                 <Dialog.Root open={open} >
                     <Dialog.Portal  >
-                        <Dialog.Overlay onClick={() => setOpen(false)} className="DialogOverlay  " />
+                        <Dialog.Overlay onClick={() => setOpen(false)} className="DialogOverlay bg-black bg-opacity-40 " />
                         <Dialog.Content className="DialogContent relative ">
                             <div onClick={() => setOpen(false)} role='button' className=' absolute top-4 right-4 ' >
                                 <CloseIcon />
@@ -88,26 +98,26 @@ export default function GetInTouch({ open, setOpen, text, span }: IProps) {
                                 <p className=' font-axiformamedium text-center ' >Send us a message if you have an inquiry. We will get back to you.</p>
                                 <div className=' w-full flex flex-col mt-6 gap-4 ' >
                                     <div className=' flex w-full flex-col ' >
-                                        <p className=' text-[#37137FBF] font-axiformamedium ' >Full Name</p>
-                                        <div className=' border border-[#1E1E1E26] rounded-lg ' >
+                                        <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Full Name</p>
+                                        <div className={` border ${(error && !fullname) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] " } rounded-lg `} >
                                             <CustomInput onChange={setFullname} name="fullname" type="text" placeholder="Enter Full Name" />
                                         </div>
                                     </div>
                                     <div className=' flex w-full flex-col ' >
-                                        <p className=' text-[#37137FBF] font-axiformamedium ' >Email</p>
-                                        <div className=' border border-[#1E1E1E26] rounded-lg ' >
+                                        <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Email</p>
+                                        <div className={` border ${(error && !email) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `} >
                                             <CustomInput onChange={setEmail} name="email" type="email" placeholder="Enter Email" />
                                         </div>
                                     </div>
                                     <div className=' flex w-full flex-col ' >
-                                        <p className=' text-[#37137FBF] font-axiformamedium ' >Name Of Organisation</p>
-                                        <div className=' border border-[#1E1E1E26] rounded-lg ' >
+                                        <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Name Of Organisation</p>
+                                        <div className={` border ${(error && !organizationName) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `} >
                                             <CustomInput onChange={setOrganizationName} name="organizationName" type="text" placeholder="Enter Name Of Organisation" />
                                         </div>
                                     </div>
                                     <div className=' flex w-full flex-col ' >
-                                        <p className=' text-[#37137FBF] font-axiformamedium ' >Message</p>
-                                        <div className=' rounded-lg ' >
+                                        <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Message</p> 
+                                        <div className={` border ${(error && !message) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `}>
 
                                             <CustomInput onChange={setMessage} name="message" type="text" textarea={true} placeholder="Enter Name Of Organisation" />
                                         </div>

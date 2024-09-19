@@ -20,13 +20,13 @@ export default function CustomInput({ name, textarea, type, placeholder, disable
         // <TextField.Root size="3" placeholder={placeholder} name={name} type={type} disabled={disable} value={value} />
         <div>
             {textarea && (
-                <textarea onChange={(e)=> onChange(e.target.value)} value={value} name={name} placeholder={placeholder} className=" h-[90px] w-full rounded-lg px-3 py-2 text-sm !border outline-none border-[#1E1E1E26] " />
+                <textarea onChange={(e)=> onChange(e.target.value)} value={value} name={name} placeholder={placeholder} className=" h-[90px] w-full rounded-lg px-3 py-2 text-sm outline-none  " />
             )}
             {!textarea && 
                 <div className=" w-full h-[45px] relative " >
                     <input
                         onChange={(e)=> onChange(e.target.value)}
-                        type={type} style={{ borderRadius: borderRadius ?? "5px" }} placeholder={placeholder} disabled={disable} value={type === "date" ? new Date(value).toISOString().split('T')[0] : value} name={name} className="  w-full h-[45px] rounded-lg px-3 !border border-[#1E1E1E26]  text-sm " />
+                        type={type} style={{ borderRadius: borderRadius ?? "5px" }} placeholder={placeholder} disabled={disable} value={value} name={name} className={"  w-full h-[45px] rounded-lg px-3   text-sm "} />
                 </div>
             }
         </div>
