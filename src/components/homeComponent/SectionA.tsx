@@ -8,12 +8,12 @@ export default function FirstSection() {
 
     const [isShown, setIsShown] = useState(0)
     const data = [
-        "/images/bg1.png", 
-        "/images/bg2.png", 
-        "/images/bg3.png", 
-        "/images/bg4.jpg", 
-        "/images/bg5.webp", 
-        "/images/bg6.jpg", 
+        "/images/bg1.png",
+        "/images/bg2.png",
+        "/images/bg3.png",
+        "/images/bg4.jpg",
+        "/images/bg5.webp",
+        "/images/bg6.jpg",
         "/images/bg7.webp"
     ]
 
@@ -66,21 +66,23 @@ export default function FirstSection() {
                             <AppleStore />
                         </a>
                     </div>
-                </div> 
+                </div>
 
                 <div className=" absolute inset-0 bg-black bg-opacity-25 z-10 rounded-b-3xl lg:rounded-b-[120px] " />
             </div>
             {data?.map((item, index: any) => {
-                    return (
-                        <AnimatePresence key={index} >
+                return (
+                    <div key={index}  >
+                        <AnimatePresence >
                             {index === isShown &&
-                                <motion.div {...boxAnimation} style={{ width: "100%",position: "absolute", inset: "0px", objectFit: "cover" }} className=" flex lg:justify-center lg:h-full h-full rounded-b-3xl lg:rounded-b-[120px] " >
+                                <motion.div {...boxAnimation} style={{ width: "100%", position: "absolute", inset: "0px", objectFit: "cover" }} className=" flex lg:justify-center lg:h-full h-full rounded-b-3xl lg:rounded-b-[120px] " >
                                     <img alt={item} src={item} className=" rounded-b-3xl lg:rounded-b-[120px] object-cover h-full w-full " />
                                 </motion.div>
                             }
                         </AnimatePresence>
-                    )
-                })}
+                    </div>
+                )
+            })}
             <img alt="bluestroke" src="/images/decore.png" className=" object-cover opacity-5 top-0 right-0 absolute " />
             <img alt="ellipse2" src="/images/ellipse2.png" className=" object-cover top-6 left-0 absolute " />
             <img alt="ellipse3" src="/images/ellipse3.png" className=" object-cover top-24 left-14 absolute " />

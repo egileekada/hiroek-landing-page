@@ -1,7 +1,7 @@
 
-import { navlink } from '../constant' 
+import { navlink } from '../constant'
 import { Popover } from '@radix-ui/themes'
-import { IoMenu } from 'react-icons/io5' 
+import { IoMenu } from 'react-icons/io5'
 import { useState } from 'react'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
 import GetInTouch from './GetInTouch'
@@ -10,7 +10,7 @@ export default function Navbar() {
 
     const [open, setOpen] = useState(false)
     const [show, setShow] = useState(false)
-    const [showLink, setShowLink] = useState(false) 
+    const [showLink, setShowLink] = useState(false)
 
 
     const clickHandler = (item: boolean) => {
@@ -19,18 +19,18 @@ export default function Navbar() {
     }
 
     return (
-        <div className=' w-full bg-transparent px-4 lg:px-10 py-4 ' >
+        <div className=' w-full bg-transparent px-4 lg:px-0 py-4 ' >
             <div className=' w-full shadow-lg h-[92px] px-6 lg:px-8 flex items-center bg-[#F0F2FF] justify-between rounded-[20px] ' >
                 <a href='/' >
                     <img alt='logo' className=' h-[40px] lg:h-[54px] ' src='/images/logo.svg' />
                 </a>
-                <div className=' hidden lg:flex gap-2 h-full items-center ' >
+                <div className=' hidden lg:flex gap-2 h-full w-fit ml-auto items-center ' >
                     {navlink.map((item, index) => {
                         if (item?.name === "About Us") {
                             return (
-                                <div className=' relative h-full ' >
+                                <div key={item?.name} className=' relative h-full ' >
                                     <div onClick={() => setShowLink((prev) => !prev)} key={index} className={` ${showLink ? "bg-gradient-to-b from-[#37137F] to-[#8C43FE] text-white" : ""} h-full text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center gap-3 items-center `} role='button' >
-                                        <a className=' leading-[20px] font-black ' >{item?.name}</a>
+                                        <a className=' leading-[20px] font-black w-[80px]' >{item?.name}</a>
                                         {!showLink ? (
                                             <IoIosArrowDown />
                                         ) : (
@@ -53,10 +53,13 @@ export default function Navbar() {
                                 </div>
                             )
                         } else {
-
                             return (
-                                <a href={item?.link} key={index} className='  h-full text-[#37137F] px-4 bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center ' role='button' >
-                                    <p className=' leading-[20px] font-black ' >{item?.name}</p>
+                                <a href={item?.link} key={index} className={` px-4 h-full text-[#37137F] bg-gradient-to-b  hover:from-[#37137F] hover:to-[#8C43FE] hover:text-secondary flex justify-center items-center `} role='button' >
+                                    {item?.name === "For Charities" ? (
+                                        <p className=' leading-[20px] w-[110px] font-black ' >{item?.name}</p>
+                                    ) : (
+                                        <p className=' leading-[20px] font-black ' >{item?.name}</p>
+                                    )}
                                 </a>
                             )
                         }
@@ -106,10 +109,6 @@ export default function Navbar() {
                                     )
                                 }
                             })}
-                            {/* <GetInTouch /> */}
-                            {/* <div role='button' className=' h-[40px] bordergradient text-base font-bold px-6 rounded-[10px] flex justify-center items-center text-[#37137F] ' >
-                                Login
-                            </div> */}
                         </div>
                     </Popover.Content>
                 </Popover.Root>

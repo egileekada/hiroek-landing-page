@@ -4,11 +4,19 @@ import App from './App.tsx'
 import './index.css'
 import '@radix-ui/themes/styles.css';
 import { Theme } from '@radix-ui/themes';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { Toaster } from 'react-hot-toast';
+
+
+const queryClient = new QueryClient()
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Theme>
-      <App />
+      <QueryClientProvider client={queryClient}>
+        <App />
+        <Toaster />
+      </QueryClientProvider>
     </Theme>
   </React.StrictMode>,
 )
