@@ -77,15 +77,12 @@ export default function GetInTouch({ open, setOpen, text, span }: IProps) {
 
             {(text && span) && (
                 <span onClick={() => setOpen(true)} role="button" className=' underline '  >{text ? text : "Get In Touch"}</span>
-            )}
-
-            {/* <div onClick={() => setOpen(true)} className=' w-fit ' role='button' > */}
+            )} 
             {!text && (
                 <CustomButton onClick={() => setOpen(true)} text='Get In Touch' type="button" size={"3"} style={{ background: "linear-gradient(90deg, #8C43FE 0%, #37137F 100%)" }} className=" rounded-[10px] text-base !font-bold text-white " icon={
                     <Touch />
                 } />
-            )}
-            {/* </div> */} 
+            )} 
                 <Dialog.Root open={open} >
                     <Dialog.Portal  >
                         <Dialog.Overlay onClick={() => setOpen(false)} className="DialogOverlay bg-black bg-opacity-40 " />
