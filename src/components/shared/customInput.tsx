@@ -17,7 +17,6 @@ interface IProps {
 
 export default function CustomInput({ name, textarea, type, placeholder, disable, value, borderRadius, onChange }: IProps) {
     return (
-        // <TextField.Root size="3" placeholder={placeholder} name={name} type={type} disabled={disable} value={value} />
         <div>
             {textarea && (
                 <textarea onChange={(e)=> onChange(e.target.value)} value={value} name={name} placeholder={placeholder} className=" h-[90px] w-full rounded-lg px-3 py-2 text-sm outline-none  " />
