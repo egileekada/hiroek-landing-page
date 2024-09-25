@@ -4,19 +4,19 @@ import { Popover } from '@radix-ui/themes'
 import { IoMenu } from 'react-icons/io5'
 import { useState } from 'react'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
-import GetInTouch from './GetInTouch'
+// import GetInTouch from './GetInTouch'
 
 export default function Navbar() {
 
-    const [open, setOpen] = useState(false)
+    // const [open, setOpen] = useState(false)
     const [show, setShow] = useState(false)
     const [showLink, setShowLink] = useState(false)
 
 
-    const clickHandler = (item: boolean) => {
-        setShow(false)
-        setOpen(item)
-    }
+    // const clickHandler = (item: boolean) => {
+    //     setShow(false)
+    //     setOpen(item)
+    // }
 
     return (
         <div className=' w-full bg-transparent px-4 lg:px-0 py-4 ' >
@@ -64,7 +64,7 @@ export default function Navbar() {
                             )
                         }
                     })}
-                    <GetInTouch setOpen={clickHandler} open={open} />
+                    {/* <GetInTouch setOpen={clickHandler} open={open} /> */}
                     {/* <div role='button' className=' h-[40px] bordergradient text-base font-bold px-6 rounded-[10px] flex justify-center items-center text-[#37137F] ' >
                         Login
                     </div> */}

@@ -50,7 +50,7 @@ export default function FirstSection() {
 
     return (
         <div className=" w-full relative " >
-            <div className=' w-full lg:h-screen h-full flex items-center relative text-[#F0F2FF] !font-bold px-6 lg:px-14 ' >
+            <div className=' w-full lg:h-screen md:h-[45vh] h-full flex items-center relative text-[#F0F2FF] !font-bold px-6 lg:px-14 ' >
                 <div className=" lg:max-w-[800px] relative z-20 pt-36 lg:pt-16 lg:pb-0 pb-24 font-black flex gap-1 lg:gap-3 xl:gap-2 flex-col " >
                     {/* <p className=" text-xl tracking-[8px] ">connect, empower, inspire</p> */}
                     <p className=" text-2xl xl:text-[56px] uppercase lg:text-[45px] xl:leading-[60px] lg:leading-[50px] " >Connect with friends, Create Impactful Events, and Champion Causes Dear To You.</p>
@@ -59,10 +59,10 @@ export default function FirstSection() {
                         <Forwardarrow />
                     } /> */}
                     <div className=" flex gap-4 lg:items-center mt-6 " >
-                        <a href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" target="_blank" className=' w-full lg:w-[187.45px] ' >
+                        <a href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" target="_blank" className=' w-full md:w-[200px] lg:w-[187.45px] ' >
                             <GooglePlay />
                         </a>
-                        <a href="https://apps.apple.com/ng/app/hiroek/id6474194083" target="_blank" className=' w-full lg:w-[187.45px] ' >
+                        <a href="https://apps.apple.com/ng/app/hiroek/id6474194083" target="_blank" className=' w-full md:w-[200px] lg:w-[187.45px] ' >
                             <AppleStore />
                         </a>
                     </div>

@@ -59,7 +59,7 @@ export default function Carousel() {
                 </div>
             </div>
             <div className=" w-full flex lg:flex-row flex-col relative py-14 gap-8 px-6 lg:px-12  " >
-                <div className=" w-full lg:h-[600px] h-[200px] relative lg:pl-0 pl-6 " >
+                <div className=" w-full lg:h-[600px] lg:hidden h-[200px] relative lg:pl-0 pl-6 " >
                     {charityData?.map((item, index: any) => {
                         return (
                             <AnimatePresence key={item?.name} >
@@ -72,12 +72,17 @@ export default function Carousel() {
                         )
                     })}
                 </div>
+                <div className=" w-full lg:h-[600px] lg:block hidden h-[200px] relative lg:pl-0 pl-6 " > 
+                    <div {...boxAnimation} style={{ width: "100%", position: "absolute", inset: "0px", objectFit: "cover" }} className=" flex justify-center lg:h-[600px] h-auto lg:items-center " >
+                        <img alt={"tab"} src={charityData[7]?.img} className=" lg:object-contain object-contain h-auto lg:h-auto lg:w-full " />
+                    </div>
+                </div>
                 <div className=" w-full lg:h-[600px] h-fit flex lg:relative lg:items-center lg:justify-center flex-col gap-6  " >
                     {charityData?.map((item, index) => {
                         if (index === isShown) {
                             return (
                                 <div key={index} className=" flex flex-col lg:text-right lg:items-end lg:max-w-[80%] gap-6 " >
-                                    <motion.p {...boxAnimation}  className=" text-3xl whitespace-pre-line lg:text-[50px] lg:leading-[60px] uppercase " >{item?.name}</motion.p>
+                                    <motion.p {...boxAnimation} className=" text-3xl whitespace-pre-line lg:text-[50px] lg:leading-[60px] uppercase " >{item?.name}</motion.p>
                                     <motion.p {...boxAnimation} className=" whitespace-pre-line text-[#424242] lg:text-2xl lg:leading-[36px] " >{item?.detail}</motion.p>
                                     <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80", background: "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text="Activate your account" size={"4"} type="button" className="  cursor-pointer lg:ml-auto !text-white font-bold !w-fit !shadow-lg " icon={
                                         <Forwardarrow />

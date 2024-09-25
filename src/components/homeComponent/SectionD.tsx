@@ -12,7 +12,7 @@ export default function FortySection() {
         <div className=' text-[#F0F2FF] !font-bold gap-10 relative z-10 rounded-t-[#F0F2FF] w-full flex lg:flex-row bg-primary flex-col-reverse justify-center pt-16 lg:py-24 ' >
             
             <div className=' w-full flex justify-end lg:bg-transparent bg-primary relative lg:z-[15] lg:pt-0 pt-4 z-[15] lg:px-0 lg:h-auto h-[280px]  px-6 ' >
-                <div className=' max-w-[508px] relative z-20 flex flex-col gap-3 ' >
+                <div className=' lg:max-w-[508px] relative z-20 flex flex-col justify-center gap-3 ' >
                     <p className=' max-w-[403px] text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black ' >Instant Community Building</p>
                     <p className=' xl:text-2xl font-axiformamedium ' >Quickly connect with like-minded individuals and build a community around an event or topic without the usual complexities, allowing you to focus on what truly matters.</p>
                     <p className=' xl:text-2xl font-axiformamedium  ' >Incorporated messaging and interaction features ensures you remain connected on and offline.</p>

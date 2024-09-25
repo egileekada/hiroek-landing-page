@@ -12,10 +12,11 @@ interface IProps {
     open: boolean,
     setOpen: (by: boolean) => void,
     text?: string,
-    span?: boolean
+    span?: boolean,
+    no_underline?: boolean
 }
 
-export default function GetInTouch({ open, setOpen, text, span }: IProps) {
+export default function GetInTouch({ open, setOpen, text, span, no_underline }: IProps) {
 
     // const { setEmail, setFullname, setMessage, setOrganizationName, isLoading, mutate, message, email, fullname, organizationName } = useMessage() 
 
@@ -76,7 +77,7 @@ export default function GetInTouch({ open, setOpen, text, span }: IProps) {
         <div className=' w-fit relative ' >
 
             {(text && span) && (
-                <span onClick={() => setOpen(true)} role="button" className=' underline '  >{text ? text : "Get In Touch"}</span>
+                <span onClick={() => setOpen(true)} role="button" className={no_underline ? ' font-medium text-lg ' : ' underline '}  >{text ? text : "Get In Touch"}</span>
             )} 
             {!text && (
                 <CustomButton onClick={() => setOpen(true)} text='Get In Touch' type="button" size={"3"} style={{ background: "linear-gradient(90deg, #8C43FE 0%, #37137F 100%)" }} className=" rounded-[10px] text-base !font-bold text-white " icon={
