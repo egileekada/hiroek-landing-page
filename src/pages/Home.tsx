@@ -8,8 +8,7 @@ export default function HomePage() {
             <ThirdSection />
             <SixthSection />
             <FifthSection />
-            <ForthSection />
-            {/* <SeventhSection /> */}
+            <ForthSection /> 
             <EigthSection />  
         </div>
     )
