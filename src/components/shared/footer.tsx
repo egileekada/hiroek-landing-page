@@ -37,13 +37,7 @@ export default function Footer() {
                         <a target="_blank" href={Term} className=" font-medium text-lg  " >Terms & Conditions</a>
                         <a target="_blank" href={Policy} className=" font-medium text-lg  " >Privacy Policy</a>
                         <GetInTouch text={"Get In Touch"} span={true} no_underline open={open} setOpen={setOpen} />
-                    </div>
-                    {/* <div className=" flex flex-col gap-6 pt-2 " >
-                        <p className=" font-extrabold text-xl font-axiformablack " >Company</p>
-                        <a className=" font-medium text-lg  " >Why Hiroek?</a>
-                        <a className=" font-medium text-lg  " >Careers</a>
-                        <a className=" font-medium text-lg  " >Accessibility Statement</a>
-                    </div> */}
+                    </div> 
                     <div className=" flex flex-col gap-3 " >
                         <a target="_blank" href="https://ciof.org.uk/" >
                             <Chartered />
