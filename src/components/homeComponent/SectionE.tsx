@@ -53,7 +53,7 @@ export default function FifthSection() {
                     <img alt="one" src="/images/animation/Event5.png" className=" absolute top-0 lg:w-auto w-full " />
                 </div>
             </div>
-            <div className="  w-full relative z-10 flex bg-[#F0F2FF] h-[200px] lg:h-[350px] pt-6 lg:px-0 px-6 " >
+            <div className="  w-full relative z-10 flex bg-[#F0F2FF] h-[200px] lg:h-[350px] lg:px-0 px-6 " >
                 <div className=" lg:max-w-[500px] lg:relative lg:z-0 z-10 flex pt-8 flex-col gap-3 " >
                     <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:block hidden " >Discover <br /> your tribe!</p>
                     <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:hidden " >Discover your tribe!</p>
