@@ -77,7 +77,7 @@ export default function GetInTouch({ open, setOpen, text, span, no_underline, ac
     return (
         <div className=' w-fit relative ' >
 
-            {(text && span && activatebtn) && (
+            {(text && span && !activatebtn) && (
                 <span onClick={() => setOpen(true)} role="button" className={no_underline ? ' font-medium text-lg ' : ' underline '}  >{text ? text : "Get In Touch"}</span>
             )}
             {(!text && !activatebtn) && (
