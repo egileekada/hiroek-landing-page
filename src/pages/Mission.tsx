@@ -1,12 +1,12 @@
 
-import { FirstMissionSection, SecondMissionSection, ThirdMissionSection } from '../components/aboutComponent'
+import { FirstMissionSection } from '../components/aboutComponent'
 
 export default function Mission() {
     return (
         <div className=' w-full h-full bg-[#37137F] overflow-x-hidden ' >
             <FirstMissionSection />
-            <SecondMissionSection />
-            <ThirdMissionSection />
+            {/* <SecondMissionSection />
+            <ThirdMissionSection /> */}
             {/* <ForthAboutSection /> */}
         </div>
     )

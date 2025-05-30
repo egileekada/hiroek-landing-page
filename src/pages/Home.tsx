@@ -1,4 +1,4 @@
-import { FirstSection, SecondSection, ThirdSection, ForthSection, FifthSection, SixthSection, EigthSection } from '../components/homeComponent'   
+import { FirstSection, SecondSection, ThirdSection, FifthSection, SixthSection, EigthSection } from '../components/homeComponent'   
 
 export default function HomePage() {
     return (
@@ -8,7 +8,7 @@ export default function HomePage() {
             <ThirdSection />
             <SixthSection />
             <FifthSection />
-            <ForthSection /> 
+            {/* <ForthSection />  */}
             <EigthSection />  
         </div>
     )

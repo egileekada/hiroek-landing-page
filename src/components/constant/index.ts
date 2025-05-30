@@ -4,17 +4,17 @@ export const navlink = [
         link: "/about-us"
     },
     {
-        name: "For Charities",
-        link: "/charities"
+        name: "Partners",
+        link: "/partners"
     },
     {
         name: "Fees",
         link: "/fees"
     },
     {
-        name: "Partners",
-        link: "/partners"
-    }
+        name: "Charities & Social, Impact Organisations",
+        link: "/charities"
+    },
 ]
 
 export const navlinkmobile = [

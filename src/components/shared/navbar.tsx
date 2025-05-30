@@ -3,28 +3,26 @@ import { navlink } from '../constant'
 import { Popover } from '@radix-ui/themes'
 import { IoMenu } from 'react-icons/io5'
 import { useState } from 'react'
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io' 
+import { Logo } from '../svg'
 // import GetInTouch from './GetInTouch'
 
-export default function Navbar() {
+export default function Navbar({ yaxis }: {yaxis: any}) {
 
     // const [open, setOpen] = useState(false)
     const [show, setShow] = useState(false)
-    const [showLink, setShowLink] = useState(false)
+    const [showLink, setShowLink] = useState(false) 
+    console.log(scrollY);
 
-
-    // const clickHandler = (item: boolean) => {
-    //     setShow(false)
-    //     setOpen(item)
-    // }
 
     return (
-        <div className=' w-full bg-transparent px-4 lg:px-0 py-4 ' >
-            <div className=' w-full shadow-lg h-[92px] px-6 lg:px-8 flex items-center bg-[#F0F2FF] justify-between rounded-[20px] ' >
+        <div className=' w-full bg-transparent py-4 ' >
+            <div className={` w-full h-[92px] px-3 lg:px-8 flex items-center ${yaxis === 0 ? " bg-transparent " : " bg-[#F0F2FF] shadow-lg "} justify-between rounded-[20px] `} >
                 <a href='/' >
-                    <img alt='logo' className=' h-[40px] lg:h-[54px] ' src='/images/logo.svg' />
+                    {/* <img alt='logo' className=' h-[40px] lg:h-[54px] ' src={yaxis === 0 ? '/images/whitelogo.png' : '/images/logo.svg' }/> */}
+                    <Logo color={yaxis === 0 ? "white" : ""} />
                 </a>
-                <div className=' hidden lg:flex gap-2 h-full w-fit ml-auto items-center ' >
+                <div className=' hidden gap-2 h-full w-fit ml-auto items-center ' >
                     {navlink.map((item, index) => {
                         if (item?.name === "About Us") {
                             return (
@@ -71,18 +69,18 @@ export default function Navbar() {
                 </div>
                 <Popover.Root open={show} onOpenChange={setShow} >
                     <Popover.Trigger>
-                        <button role='button' onClick={() => setShow(true)} className=' text-primary lg:hidden ' >
-                            <IoMenu size={"35px"} />
+                        <button role='button' onClick={() => setShow(true)} className=' text-primary ' >
+                            <IoMenu color={yaxis === 0 ? "white" : ""} size={"35px"} />
                         </button>
                     </Popover.Trigger>
-                    <Popover.Content maxWidth={"500px"}>
-                        <div className=' flex flex-col w-full gap-6 py-3 px-2 ' >
+                    <Popover.Content >
+                        <div className=' flex flex-col w-full gap-6 py-3 text-center max-w-[190px] ' >
                             {navlink.map((item, index) => {
                                 if (item?.name === "About Us") {
                                     return (
-                                        <div key={index} className=' flex gap-4 flex-col ' role='button' >
-                                            <div role='button' onClick={() => setShowLink((prev) => !prev)} className=' flex items-center w-full justify-between ' >
-                                                <p className=' text-[#37137F] text-lg lg:leading-[20px] font-semibold ' >{item?.name}</p>
+                                        <div key={index} className=' flex gap-4 flex-col w-full items-center ' role='button' >
+                                            <div role='button' onClick={() => setShowLink((prev) => !prev)} className=' flex items-center w-fit gap-2  ' >
+                                                <p className=' text-[#37137F] text-lg lg:leading-[20px] font-bold ' >{item?.name}</p>
                                                 {!showLink ? (
                                                     <IoIosArrowDown />
                                                 ) : (
@@ -91,10 +89,10 @@ export default function Navbar() {
                                             </div>
                                             {showLink && (
                                                 <div className=' w-full flex flex-col gap-5 ' >
-                                                    <a href='/about-us' className='  text-[#37137F] pl-2 font-semibold ' >
+                                                    <a href='/about-us' className='  text-[#37137F] pl-2 font-bold ' >
                                                         Why Hiroek?
                                                     </a>
-                                                    <a href='/mission' className=' rounded-b-lg  text-[#37137F] pl-2 font-semibold ' >
+                                                    <a href='/mission' className=' rounded-b-lg  text-[#37137F] pl-2 font-bold ' >
                                                         Our Mission
                                                     </a>
                                                 </div>
@@ -104,7 +102,7 @@ export default function Navbar() {
                                 } else {
                                     return (
                                         <div key={index} className='' role='button' >
-                                            <a href={item?.link} onClick={() => setShow(false)} className=' text-[#37137F] text-lg lg:leading-[20px] font-semibold ' >{item?.name}</a>
+                                            <a href={item?.link} onClick={() => setShow(false)} className=' text-[#37137F]  text-lg lg:leading-[20px] font-bold ' >{item?.name}</a>
                                         </div>
                                     )
                                 }

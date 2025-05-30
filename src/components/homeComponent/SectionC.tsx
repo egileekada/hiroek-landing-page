@@ -2,6 +2,7 @@ import { useRef } from "react";
 // import { CustomButton } from "../shared";
 // import { Forwardarrow } from "../svg";
 import { motion, useInView } from "framer-motion";
+import VideoPlayer from "../shared/videoPlayer";
 
 
 export default function ThirdSection() {
@@ -10,15 +11,16 @@ export default function ThirdSection() {
     const isInView = useInView(ref); 
 
     return (
-        <div className=" bg-[#F0F2FF] relative text-[#37137F] !font-bold gap-6 rounded-t-3xl lg:rounded-t-[120px] w-full flex lg:flex-row flex-col justify-center pt-24 " >
-            <div className="  w-full lg:h-auto h-[250px] md:h-[400px] relative lg:z-10 flex justify-end lg:px-0 px-6 " >
-                <motion.div ref={ref} className="origin-bottom-left absolute top-0 w-[50%] lg:w-[350px]" animate={{
+        <div className=" bg-[#F0F2FF] relative text-[#37137F] !font-bold gap-6 rounded-t-3xl lg:rounded-t-[120px] w-full flex lg:flex-row flex-col justify-center py-6 items-center " >
+            <div className="  w-[70%] lg:w-full h-auto relative lg:z-10 flex justify-center lg:px-0 px-6 " >
+                {/* <motion.div ref={ref} className="origin-bottom-left absolute top-0 w-[50%] lg:w-[350px]" animate={{
                     rotate: isInView ? -25 : 0
                 }}
                     transition={{ duration: 0.5, delay: isInView ? 0.5 : 0 }} >
                     <img alt="two" src="/images/animation/Event2.png" className=" lg:w-full " />
                 </motion.div> 
-                <img alt="one" src="/images/animation/Event1.png" className="absolute w-[50%] lg:w-[350px] object-fill ml-auto object-top top-0 z-[2]  " /> 
+                <img alt="one" src="/images/animation/Event1.png" className="absolute w-[50%] lg:w-[350px] object-fill ml-auto object-top top-0 z-[2]  " />  */}
+                <VideoPlayer autoPlay={true} src="/first.mp4" />
             </div>
             <div className=" w-full bg-[#F0F2FF] relative lg:z-0 z-[5] lg:h-[400px] h-[230px] lg:px-0  px-6 lg:pt-0  " >
                 <div className=" lg:max-w-[544px] relative z-10 flex flex-col lg:h-auto h-full pt-8 gap-3   " >
