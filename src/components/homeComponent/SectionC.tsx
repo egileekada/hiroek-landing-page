@@ -1,14 +1,14 @@
-import { useRef } from "react";
+// import { useRef } from "react";
 // import { CustomButton } from "../shared";
 // import { Forwardarrow } from "../svg";
-import { motion, useInView } from "framer-motion";
+// import { motion, useInView } from "framer-motion";
 import VideoPlayer from "../shared/videoPlayer";
 
 
 export default function ThirdSection() {
 
-    const ref = useRef(null);
-    const isInView = useInView(ref); 
+    // const ref = useRef(null);
+    // const isInView = useInView(ref); 
 
     return (
         <div className=" bg-[#F0F2FF] relative text-[#37137F] !font-bold gap-6 rounded-t-3xl lg:rounded-t-[120px] w-full flex lg:flex-row flex-col justify-center py-6 items-center " >

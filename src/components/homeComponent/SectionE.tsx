@@ -1,17 +1,17 @@
-import { useRef } from "react";
+// import { useRef } from "react";
 // import CustomButton from "../shared/customButton";
 // import { Forwardarrow } from "../svg";
-import { motion, useInView } from "framer-motion";
+// import { motion, useInView } from "framer-motion";
 
 
 export default function FifthSection() {
 
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+    // const ref = useRef(null);
+    // const isInView = useInView(ref);
 
     return (
         <div className=" bg-[#F0F2FF] text-[#37137F] relative z-10 !font-bold lg:px-6 gap-10 w-full flex lg:flex-row flex-col justify-center pt-14 lg:py-24 " >
-            <div  ref={ref} />
+            <div />
             <div className=" w-full justify-center md:flex hidden relative lg:h-[400px] md:h-[500px] h-[250px] lg:px-0 px-6 " >
                 {/* <motion.div className="origin-bottom-left lg:block hidden absolute top-0 w-[50%] lg:w-[350px]" animate={{
                     x: isInView ? -170 : 0

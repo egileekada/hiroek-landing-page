@@ -1,4 +1,4 @@
-import { FirstFeeSection, SecondFeeSection } from "../components/feeComponent";
+import { FirstFeeSection } from "../components/feeComponent";
 
 
 export default function Fee() {

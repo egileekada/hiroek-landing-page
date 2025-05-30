@@ -1,5 +1,5 @@
 
-import { FirstAboutSection, SecondAboutSection, ThirdAboutSection } from "../components/aboutComponent";
+import { FirstAboutSection, SecondAboutSection } from "../components/aboutComponent";
 
 export default function AboutUs() {
     return (

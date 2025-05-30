@@ -1,15 +1,12 @@
-import { useState } from "react";
 import { NinethSection } from "../homeComponent";
 import Term from "../../pdf/TAndC.pdf";
 import Policy from "../../pdf/PAndP.pdf";
-import { AppleStore, Chartered, GooglePlay, Instagram, Tiktok, Twitter, Youtube } from "../svg";
-import GetInTouch from "./GetInTouch";
+import { AppleStore, GooglePlay, Instagram, Tiktok, Twitter, Youtube } from "../svg"; 
 
 
 export default function Footer() {
 
-    const location = window.location.href;
-    const [open, setOpen] = useState(false)
+    const location = window.location.href; 
 
     return (
         <div className=" w-full flex flex-col relative " >

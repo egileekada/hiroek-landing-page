@@ -1,11 +1,11 @@
-import { motion, useInView } from "framer-motion"; 
-import { useRef } from "react";
+// import { useInView } from "framer-motion"; 
+// import { useRef } from "react";
 
 export default function SixthSection() { 
     
 
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+    // const ref = useRef(null);
+    // // const isInView = useInView(ref);
 
     return (
         <div className=" text-[#F0F2FF] relative z-10 !font-bold gap-10 w-full  flex flex-col lg:flex-row-reverse justify-center pt-20 pb-0 " >
