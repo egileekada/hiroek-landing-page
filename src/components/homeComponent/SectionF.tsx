@@ -16,10 +16,10 @@ export default function SixthSection() {
                     </div>
                 </div>
             </div>
-            <div className=" w-full flex lg:h-auto h-[270px] lg:justify-end lg:px-0 lg:py-24 px-6 py-8 lg:bg-transparent bg-primary z-10 " >
+            <div className=" w-full flex h-auto lg:justify-end lg:px-0 lg:py-24 px-6 py-8 lg:bg-transparent bg-primary z-10 " >
                 <div className=" lg:max-w-[500px] relative z-10 flex flex-col gap-3 " >
-                    <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:block hidden capitalize " >CREATE & share events</p>
-                    <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:hidden capitalize " >CREATE & share events</p>
+                    <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:block hidden capitalize " >CREATE & SHARE EVENTS</p>
+                    <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:hidden capitalize " >CREATE & SHARE EVENTS</p>
                     <p className=" xl:text-2xl font-axiformamedium ">Bring your ideas to life, whether it's a local gathering, fundraiser, or workshop. Effortlessly create and host events, then share them directly with friends. Encourage community driven participation to make it easier for people to connect, engage, and share in the experience.</p>
                     {/* <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#DF6951] !text-white font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrow />

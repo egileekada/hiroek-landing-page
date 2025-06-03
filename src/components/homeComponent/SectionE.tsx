@@ -55,8 +55,8 @@ export default function FifthSection() {
             </div>
             <div className="  w-full relative z-10 flex bg-[#F0F2FF] h-fit lg:h-[350px] lg:px-0 px-6 " >
                 <div className=" lg:max-w-[500px] lg:relative lg:z-0 z-10 flex py-8 flex-col gap-3 " >
-                    <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:block hidden capitalize " >Never Miss a beat</p>
-                    <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:hidden capitalize " >Never Miss a beat</p>
+                    <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:block hidden !capitalize " >NEVER MISS A BEAT</p>
+                    <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:hidden !capitalize " >NEVER MISS A BEAT</p>
                     <p className=" lg:text-2xl text-[#424242] font-axiformamedium " >Get real-time updates from your favourite event organisers or communities, and engage with others instantly around an event or topic without the usual complexities. Incorporated messaging and interaction features ensures you remain connected on and offline.</p>
                     {/* <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrow />
