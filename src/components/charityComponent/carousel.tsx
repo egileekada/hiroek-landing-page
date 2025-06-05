@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CarouselLeftArrow, CarouselRightArrow, UnderLineIcon } from "../svg";
 import { charityData } from "../constant";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import GetInTouch from "../shared/GetInTouch";
 // import { CustomButton } from "../shared";
 

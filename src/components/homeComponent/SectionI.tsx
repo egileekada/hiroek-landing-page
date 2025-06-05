@@ -2,9 +2,7 @@
 // import { CustomButton } from '../shared'
 // import { Forwardarrow } from '../svg'
 
-import { useState } from "react";
-import { CustomButton } from "../shared"; 
-import { Forwardarrow, Forwardarrowcolored } from "../svg";
+import { useState } from "react"; 
 import GetInTouch from "../shared/GetInTouch";
 
 export default function NinethSection({ charity } : {charity?: boolean}) {
