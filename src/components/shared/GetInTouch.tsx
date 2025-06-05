@@ -16,9 +16,11 @@ interface IProps {
     no_underline?: boolean,
     activatebtn?: boolean,
     whitebg?: boolean
+    coloredbtn?: boolean,
+    label?: string
 }
 
-export default function GetInTouch({ open, setOpen, text, span, no_underline, activatebtn, whitebg }: IProps) {
+export default function GetInTouch({ open, setOpen, text, span, no_underline, activatebtn, whitebg, coloredbtn, label }: IProps) {
 
     // const { setEmail, setFullname, setMessage, setOrganizationName, isLoading, mutate, message, email, fullname, organizationName } = useMessage() 
 
@@ -86,10 +88,15 @@ export default function GetInTouch({ open, setOpen, text, span, no_underline, ac
                     <Touch />
                 } />
             )}
-            {(activatebtn) && (
-                <CustomButton onClick={() => setOpen(true)} style={{ boxShadow: whitebg ? " " : "3px 3px 0px 0px #37137F80", background: whitebg ? " " : "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text="Activate your account" size={"4"} type="button" className={` ${whitebg ? " !bg-white !text-primary " : "  !text-white " }  !cursor-pointer lg:ml-auto font-bold !w-fit !shadow-lg `} icon={
+            {(activatebtn && !coloredbtn) && (
+                <CustomButton onClick={() => setOpen(true)} style={{ boxShadow: whitebg ? " " : "3px 3px 0px 0px #37137F80", background: whitebg ? " " : "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text={label ? label : "Activate your account"} size={"4"} type="button" className={` ${whitebg ? " !bg-white !text-primary " : "  !text-white " }  !cursor-pointer lg:ml-auto font-bold !w-fit !shadow-lg `} icon={
                     whitebg ? 
                     <Forwardarrowcolored /> :
+                    <Forwardarrow />
+                } />
+            )} 
+            {(activatebtn && coloredbtn) && (
+                <CustomButton onClick={() => setOpen(true)} text={label ? label : "Sign Up For Free"} size={"4"} type="button" className={` !bg-[#B00062] !cursor-pointer lg:ml-auto font-bold !w-fit !shadow-lg `} icon={
                     <Forwardarrow />
                 } />
             )}

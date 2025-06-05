@@ -1,13 +1,14 @@
 import { AnimatePresence, motion } from "framer-motion";
 // import { CustomButton } from "../shared";
-import { AppleStore, Forwardarrowcolored, GooglePlay, UnderLineIcon } from "../svg";
-import { useEffect, useState } from "react";
-import { CustomButton } from "../shared";
+import { AppleStore, GooglePlay, UnderLineIcon } from "../svg";
+import { useEffect, useState } from "react"; 
+import GetInTouch from "../shared/GetInTouch";
 
 
 export default function FirstSection() {
 
     const [isShown, setIsShown] = useState(0)
+    const [ open, setOpen ] = useState(false)
     const data = [
         "/images/bg1.png",
         "/images/bg2.png",
@@ -57,9 +58,10 @@ export default function FirstSection() {
                     <p className=" text-4xl xl:text-[64px] uppercase lg:text-[45px] leading-[120%] " >Your Ultimate Event Discovery App</p>
                     <UnderLineIcon />
                     <p className=" xl:text-2xl mt-3 mb-5 axiforma-black " >Find Exciting Events Near You or Create Your Own, All at Your Fingertips.</p>
-                    <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-white !mt-6 !text-[#37137F] font-bold !w-fit !shadow-lg " icon={
+                    {/* <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-white !mt-6 !text-[#37137F] font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrowcolored />
-                    } />
+                    } /> */} 
+<GetInTouch open={open} label="Get Started" setOpen={setOpen} whitebg={true} activatebtn={true} />
                     <div className=" flex gap-4 lg:items-center mt-6 " >
                         <a href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" target="_blank" className=' w-[170px] lg:w-[187.45px] ' >
                             <GooglePlay />
