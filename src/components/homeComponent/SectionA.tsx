@@ -1,17 +1,22 @@
 import { AnimatePresence, motion } from "framer-motion";
 // import { CustomButton } from "../shared";
-// import { AppleStore, GooglePlay } from "../svg";
+import { AppleStore, Forwardarrowcolored, GooglePlay, UnderLineIcon } from "../svg";
 import { useEffect, useState } from "react";
+import { CustomButton } from "../shared";
 
 
 export default function FirstSection() {
 
     const [isShown, setIsShown] = useState(0)
     const data = [
-        "/images/home/bg1.jpg",
-        "/images/home/bg2.jpg",
-        "/images/home/bg3.jpg", 
-    ] 
+        "/images/bg1.png",
+        "/images/bg2.png",
+        "/images/bg3.png",
+        "/images/bg4.jpg",
+        "/images/bg5.webp",
+        "/images/bg6.jpg",
+        "/images/bg7.webp"
+    ]
 
     const boxAnimation = {
         key: "box",
@@ -46,12 +51,26 @@ export default function FirstSection() {
 
     return (
         <div className=" w-full relative " >
-            <div className=' w-full lg:h-screen md:h-[45vh] h-[70vh] flex items-center relative text-[#F0F2FF] !font-bold px-6 lg:px-14 ' >
-                <div className=" lg:max-w-[1200px] relative z-20 pt-36 lg:pt-16 lg:pb-0 pb-24 font-black flex gap-1 lg:gap-3 xl:gap-2 flex-col " > 
-                    <p className=" text-2xl xl:text-[56px] lg:text-[45px] leading-[120%] " >Your Ultimate Event Discovery App. Find exciting events near you or create your own -- all at your fingertips. Explore, connect, and experience anytime, anywhere.</p>
+            <div className=' w-full lg:h-screen h-[80vh] flex items-center relative text-[#F0F2FF] !font-bold px-6 lg:px-14 ' >
+                <div className=" lg:max-w-[800px] relative z-20 pt-36 lg:pt-16 lg:pb-0 pb-24 font-black flex gap-1 lg:gap-3 xl:gap-2 flex-col " >
+                    {/* <p className=" text-xl tracking-[8px] ">connect, empower, inspire</p> */}
+                    <p className=" text-4xl xl:text-[64px] uppercase lg:text-[45px] leading-[120%] " >Your Ultimate Event Discovery App</p>
+                    <UnderLineIcon />
+                    <p className=" xl:text-2xl mt-3 mb-5 axiforma-black " >Find Exciting Events Near You or Create Your Own, All at Your Fingertips.</p>
+                    <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-white !mt-6 !text-[#37137F] font-bold !w-fit !shadow-lg " icon={
+                        <Forwardarrowcolored />
+                    } />
+                    <div className=" flex gap-4 lg:items-center mt-6 " >
+                        <a href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" target="_blank" className=' w-[170px] lg:w-[187.45px] ' >
+                            <GooglePlay />
+                        </a>
+                        <a href="https://apps.apple.com/ng/app/hiroek/id6474194083" target="_blank" className=' w-[170px]  lg:w-[187.45px] ' >
+                            <AppleStore />
+                        </a>
+                    </div>
                 </div>
 
-                <div className=" absolute inset-0 bg-[#37137F] bg-opacity-50 z-10 rounded-b-3xl lg:rounded-b-[120px] " />
+                <div className=" absolute inset-0 bg-black bg-opacity-25 z-10 rounded-b-3xl lg:rounded-b-[120px] " />
             </div>
             {data?.map((item, index: any) => {
                 return (

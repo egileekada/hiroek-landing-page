@@ -1,7 +1,7 @@
 
 import * as Dialog from '@radix-ui/react-dialog';
 import { CustomButton } from '.'
-import { CloseIcon, Forwardarrow, Touch } from '../svg'
+import { CloseIcon, Forwardarrow, Forwardarrowcolored, Touch } from '../svg'
 import CustomInput from './customInput';
 import toast from "react-hot-toast";
 import { useMutation } from 'react-query';
@@ -14,10 +14,11 @@ interface IProps {
     text?: string,
     span?: boolean,
     no_underline?: boolean,
-    activatebtn?: boolean
+    activatebtn?: boolean,
+    whitebg?: boolean
 }
 
-export default function GetInTouch({ open, setOpen, text, span, no_underline, activatebtn }: IProps) {
+export default function GetInTouch({ open, setOpen, text, span, no_underline, activatebtn, whitebg }: IProps) {
 
     // const { setEmail, setFullname, setMessage, setOrganizationName, isLoading, mutate, message, email, fullname, organizationName } = useMessage() 
 
@@ -86,7 +87,9 @@ export default function GetInTouch({ open, setOpen, text, span, no_underline, ac
                 } />
             )}
             {(activatebtn) && (
-                <CustomButton onClick={() => setOpen(true)} style={{ boxShadow: "3px 3px 0px 0px #37137F80", background: "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text="Activate your account" size={"4"} type="button" className="  !cursor-pointer lg:ml-auto !text-white font-bold !w-fit !shadow-lg " icon={
+                <CustomButton onClick={() => setOpen(true)} style={{ boxShadow: whitebg ? " " : "3px 3px 0px 0px #37137F80", background: whitebg ? " " : "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text="Activate your account" size={"4"} type="button" className={` ${whitebg ? " !bg-white !text-primary " : "  !text-white " }  !cursor-pointer lg:ml-auto font-bold !w-fit !shadow-lg `} icon={
+                    whitebg ? 
+                    <Forwardarrowcolored /> :
                     <Forwardarrow />
                 } />
             )}

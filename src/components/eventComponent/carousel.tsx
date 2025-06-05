@@ -64,7 +64,7 @@ export default function Carousel() {
                     )
                 })}
             </div>
-            <div className=" w-full lg:h-[600px] h-auto flex relative  lg:items-center lg:justify-center flex-col gap-6  " >
+            <div className=" w-full lg:h-[600px] h-[250px] flex relative  lg:items-center lg:justify-center flex-col gap-6  " >
                 {eventData?.map((item, index) => {
                     if (index === isShown) {
                         return (

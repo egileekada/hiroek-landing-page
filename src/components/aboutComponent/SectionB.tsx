@@ -2,7 +2,7 @@
 
 export default function SectionB() {
     return (
-        <div className=' w-full py-14 flex lg:flex-row relative lg:gap-9 gap-6 items-center px-6 lg:px-12 bg-[#F0F2FF] justify-center text-[#37137F] ' >
+        <div className=' w-full py-14 flex lg:flex-row flex-col relative lg:gap-9 gap-6 items-center px-6 lg:px-12 bg-[#F0F2FF] justify-center text-[#37137F] ' >
             <div className=" w-fit " >
                 <div className=' lg:w-[400px] font-black relative z-10 flex flex-col gap-3 text-lg lg:text-[38px] lg:leading-[120%] ' >
                     <p  >Hiroek is so intuitive, you already know how to use it..</p>

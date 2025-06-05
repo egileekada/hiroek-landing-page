@@ -61,18 +61,18 @@ export default function Carousel() {
                 </div>
             </div>
             <div className=" w-full flex lg:flex-row flex-col relative py-14 gap-8 px-6 lg:px-12  " >
-                <div className=" w-full lg:h-[600px] lg:hidden h-[200px] relative lg:pl-0 pl-6 " >
-                    {charityData?.map((item, index: any) => {
+                <div className=" w-full lg:h-[600px] h-[200px] lg:hidden  relative lg:pl-0 pl-6 " >
+                    {/* {charityData?.map((item, index: any) => {
                         return (
                             <AnimatePresence key={item?.name} >
                                 {index === isShown &&
-                                    <motion.div {...boxAnimation} style={{ width: "100%", position: "absolute", inset: "0px", objectFit: "cover" }} className=" flex justify-center lg:h-[600px] h-auto lg:items-center " >
-                                        <img alt={item?.name} src={item?.img} className=" lg:object-contain object-contain h-auto lg:h-auto lg:w-full " />
-                                    </motion.div>
+                                    <motion.div {...boxAnimation} style={{ width: "100%", position: "absolute", inset: "0px", objectFit: "cover" }} className=" flex justify-center lg:h-[600px] h-auto lg:items-center " > */}
+                                        <img alt={charityData[7]?.name} src={charityData[7]?.img} className=" lg:object-contain object-contain lg:h-[600px] h-[200px] lg:w-full " />
+                                    {/* </motion.div>
                                 }
                             </AnimatePresence>
                         )
-                    })}
+                    })} */}
                 </div>
                 <div className=" w-full lg:h-[600px] lg:block hidden h-[200px] relative lg:pl-0 pl-6 " > 
                     <div {...boxAnimation} style={{ width: "100%", position: "absolute", inset: "0px", objectFit: "cover" }} className=" flex justify-center lg:h-[600px] h-auto lg:items-center " >
@@ -83,14 +83,14 @@ export default function Carousel() {
                     {charityData?.map((item, index) => {
                         if (index === isShown) {
                             return (
-                                <div key={index} className=" flex flex-col lg:text-right lg:items-end lg:max-w-[80%] gap-6 " >
+                                <div key={index} className=" flex flex-col lg:text-right lg:items-end h-[200px] lg:max-w-[80%] gap-6 " >
                                     <motion.p {...boxAnimation} className=" text-3xl whitespace-pre-line lg:text-[50px] lg:leading-[60px] uppercase " >{item?.name}</motion.p>
                                     <motion.p {...boxAnimation} className=" whitespace-pre-line text-[#424242] lg:text-2xl lg:leading-[36px] " >{item?.detail}</motion.p>
-                                    <GetInTouch open={open} setOpen={setOpen} activatebtn={true} />
                                 </div>
                             )
                         }
                     })}
+                    <GetInTouch open={open} setOpen={setOpen} activatebtn={true} />
                     <div className=" w-full hidden lg:flex absolute bottom-0 z-10 justify-between items-center " >
                         <div onClick={() => clickHandler(isShown - 1)} role="button" className=" w-[45px] lg:w-[64px] " >
                             <CarouselLeftArrow />
