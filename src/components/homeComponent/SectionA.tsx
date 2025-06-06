@@ -52,16 +52,16 @@ export default function FirstSection() {
 
     return (
         <div className=" w-full relative " >
-            <div className=' w-full lg:h-screen h-[80vh] flex items-center relative text-[#F0F2FF] !font-bold px-6 lg:px-14 ' >
+            <div className=' w-screen lg:h-screen h-full flex items-center relative text-[#F0F2FF] !font-bold px-6 lg:px-14 ' >
                 <div className=" lg:max-w-[800px] relative z-20 pt-36 lg:pt-16 lg:pb-0 pb-24 font-black flex gap-1 lg:gap-3 xl:gap-2 flex-col " >
                     {/* <p className=" text-xl tracking-[8px] ">connect, empower, inspire</p> */}
-                    <p className=" text-4xl xl:text-[64px] uppercase lg:text-[45px] leading-[120%] " >Your Ultimate Event Discovery App</p>
+                    <p className=" text-2xl xl:text-[64px] uppercase lg:text-[45px] leading-[120%] " >Your Ultimate Event Discovery App</p>
                     <UnderLineIcon />
                     <p className=" xl:text-2xl mt-3 mb-5 axiforma-black " >Find Exciting Events Near You or Create Your Own, All at Your Fingertips.</p>
                     {/* <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-white !mt-6 !text-[#37137F] font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrowcolored />
                     } /> */} 
-<GetInTouch open={open} label="Get Started" setOpen={setOpen} whitebg={true} activatebtn={true} />
+                    <GetInTouch open={open} label="Get Started" setOpen={setOpen} whitebg={true} activatebtn={true} />
                     <div className=" flex gap-4 lg:items-center mt-6 " >
                         <a href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" target="_blank" className=' w-[170px] lg:w-[187.45px] ' >
                             <GooglePlay />

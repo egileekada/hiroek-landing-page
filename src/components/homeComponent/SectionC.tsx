@@ -24,9 +24,9 @@ export default function ThirdSection() {
             </div>
             <div className=" w-full bg-[#F0F2FF] relative lg:z-0 z-[5] lg:h-[400px] h-[230px] lg:px-0  px-6 lg:pt-0  " >
                 <div className=" lg:max-w-[544px] relative z-10 flex flex-col lg:h-auto h-full pt-8 gap-3   " >
-                    <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:block hidden " >EFFORTLESS <br /> EVENT CREATION</p>
-                    <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:hidden " >EFFORTLESS EVENT CREATION</p>
-                    <p className=" xl:text-2xl text-[#424242] !font-axiformamedium " >With Hiroek, planning and organising events is streamlined and intuitive, saving you valuable time.</p>
+                    <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:block hidden " >EFFORTLESS EVENT DISCOVERY</p>
+                    <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black lg:hidden " >EFFORTLESS EVENT DISCOVERY</p>
+                    <p className=" xl:text-2xl text-[#424242] !font-axiformamedium " >Explore events that go beyond entertainment. Discover gatherings that inspire, connect, foster personal growth, and provide opportunities to make a difference.</p>
                     {/* <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#37137F] !text-white font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrow />
                     } /> */}

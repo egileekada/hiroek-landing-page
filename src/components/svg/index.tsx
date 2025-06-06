@@ -144,7 +144,7 @@ export function NextArrow() {
 
 export function UnderLineIcon() {
     return (
-        <svg width="478" height="19" viewBox="0 0 478 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className=" lg:w-[478px] w-[70%] " viewBox="0 0 478 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="mask0_2190_7594" maskUnits="userSpaceOnUse" x="0" y="0" width="612" height="19">
                 <rect width="612" height="19" fill="#C4C4C4" />
             </mask>
