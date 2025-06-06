@@ -57,7 +57,7 @@ export default function FirstSection() {
                     {/* <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-white !mt-6 !text-[#37137F] font-bold !w-fit !shadow-lg " icon={
                         <Forwardarrowcolored />
                     } /> */} 
-                    <GetInTouch open={open} label="Get Started" setOpen={setOpen} whitebg={true} activatebtn={true} />
+                    <GetInTouch tab={2} open={open} label="Get Started" setOpen={setOpen} whitebg={true} activatebtn={true} />
                     <div className=" flex gap-4 lg:items-center mt-6 " >
                         <a href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" target="_blank" className=' w-[170px] lg:w-[187.45px] ' >
                             <GooglePlay />

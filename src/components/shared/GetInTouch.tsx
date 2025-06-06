@@ -11,8 +11,7 @@ import { useEffect, useState } from 'react';
 interface IProps {
     open?: boolean,
     setOpen?: any,
-    show?: boolean,
-    setShow?: any,
+    tab: number,
     text?: string,
     span?: boolean,
     no_underline?: boolean,
@@ -23,7 +22,7 @@ interface IProps {
     graident?: boolean,
 }
 
-export default function GetInTouch({ open, setOpen, show, setShow, text, span, no_underline, activatebtn, whitebg, coloredbtn, label, graident }: IProps) {
+export default function GetInTouch({ open, setOpen, tab, text, span, no_underline, activatebtn, whitebg, coloredbtn, label, graident }: IProps) {
 
     // const { setEmail, setFullname, setMessage, setOrganizationName, isLoading, mutate, message, email, fullname, organizationName } = useMessage() 
 
@@ -110,67 +109,98 @@ export default function GetInTouch({ open, setOpen, show, setShow, text, span, n
                         <div onClick={() => setOpen(false)} role='button' className=' absolute top-4 right-4 ' >
                             <CloseIcon />
                         </div>
-                        <div className=' w-full flex flex-col text-primary ' >
-                            <p className=' font-axiformablack text-2xl font-black text-center ' >Get In Touch</p>
-                            <p className=' font-axiformamedium text-center ' >Send us a message if you have an inquiry. We will get back to you.</p>
-                            <div className=' w-full flex flex-col mt-6 gap-4 ' >
-                                <div className=' flex w-full flex-col ' >
-                                    <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Full Name</p>
-                                    <div className={` border ${(error && !fullname) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `} >
-                                        <CustomInput onChange={setFullname} name="fullname" type="text" placeholder="Enter Full Name" />
+                        {tab === 0 && ( 
+                            <div className=' w-full flex flex-col text-primary ' >
+                                <p className=' font-axiformablack text-2xl font-black text-center ' >Get In Touch</p>
+                                <p className=' font-axiformamedium text-center ' >Send us a message if you have an inquiry. We will get back to you.</p>
+                                <div className=' w-full flex flex-col mt-6 gap-4 ' >
+                                    <div className=' flex w-full flex-col ' >
+                                        <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Full Name</p>
+                                        <div className={` border ${(error && !fullname) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `} >
+                                            <CustomInput onChange={setFullname} name="fullname" type="text" placeholder="Enter Full Name" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div className=' flex w-full flex-col ' >
-                                    <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Email</p>
-                                    <div className={` border ${(error && !email) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `} >
-                                        <CustomInput onChange={setEmail} name="email" type="email" placeholder="Enter Email" />
+                                    <div className=' flex w-full flex-col ' >
+                                        <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Email</p>
+                                        <div className={` border ${(error && !email) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `} >
+                                            <CustomInput onChange={setEmail} name="email" type="email" placeholder="Enter Email" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div className=' flex w-full flex-col ' >
-                                    <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Name Of Organisation</p>
-                                    <div className={` border ${(error && !organizationName) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `} >
-                                        <CustomInput onChange={setOrganizationName} name="organizationName" type="text" placeholder="Enter Name Of Organisation" />
+                                    <div className=' flex w-full flex-col ' >
+                                        <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Name Of Organisation</p>
+                                        <div className={` border ${(error && !organizationName) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `} >
+                                            <CustomInput onChange={setOrganizationName} name="organizationName" type="text" placeholder="Enter Name Of Organisation" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div className=' flex w-full flex-col ' >
-                                    <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Message</p>
-                                    <div className={` border ${(error && !message) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `}>
+                                    <div className=' flex w-full flex-col ' >
+                                        <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Message</p>
+                                        <div className={` border ${(error && !message) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `}>
 
-                                        <CustomInput onChange={setMessage} name="message" type="text" textarea={true} placeholder="Enter Name Of Organisation" />
+                                            <CustomInput onChange={setMessage} name="message" type="text" textarea={true} placeholder="Enter Name Of Organisation" />
+                                        </div>
                                     </div>
-                                </div>
-                                <button onClick={submit} className=' w-full rounded-lg h-[50px] z-20 relative bg-primary text-white text-center ' >{isLoading ? "Loading..." : "Submit"}</button>
-                            </div>
-                        </div>
-                    </Dialog.Content>
-                </Dialog.Portal>
-            </Dialog.Root>
-
-            <Dialog.Root open={show} >
-                <Dialog.Portal  >
-                    <Dialog.Overlay onClick={() => setShow(false)} className="DialogOverlay bg-black bg-opacity-40 " />
-                    <Dialog.Content className="DialogContent relative ">
-                        <div className=" w-full flex flex-col gap-6 items-center px-2 pb-4 " >
-                            <p className=" font-bold text-primary " >Get The Full Experience In The App!</p>
-                            <div className=" w-full flex flex-col gap-4 " >
-                                <div className=" flex w-full justify-between items-center " >
-                                    <img src="/images/google.png" alt="google" className=" w-[145px] " />
-                                    <a href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" target="_blank" >
-                                        <button onClick={submit} className=' w-full rounded-lg h-[44px] z-20 relative bg-[#37137F4D] text-[#37137F] text-center ' >proceed</button>
-                                        {/* <CustomButton rounded="8px" width="93px" fontSize="12px" color="#37137F" bgColor="#37137F4D" height="44px"  >Download</CustomButton> */}
-                                    </a>
-                                </div>
-                                <div className=" flex w-full justify-between items-center " >
-                                    <img src="/images/apple.png" alt="google" className=" w-[145px] " />
-                                    <a href="https://apps.apple.com/ng/app/hiroek/id6474194083" target="_blank" >
-                                        <button onClick={submit} className=' w-full rounded-lg h-[44px] z-20 relative bg-[#37137F4D] text-[#37137F] text-center ' >proceed</button>
-                                    </a>
+                                    <button onClick={submit} className=' w-full rounded-lg h-[50px] z-20 relative bg-primary text-white text-center ' >{isLoading ? "Loading..." : "Submit"}</button>
                                 </div>
                             </div>
-                        </div>
+                        )}
+                        {tab === 1 && ( 
+                            <div className=' w-full flex flex-col text-primary ' >
+                                <p className=' font-axiformablack text-2xl font-black text-center ' >Activate Your Account</p>
+                                <p className=' font-axiformamedium text-center ' >Fill in your details and a member of the team will get back to you Shortly.</p>
+                                <div className=' w-full flex flex-col mt-6 gap-4 ' >
+                                    <div className=' flex w-full flex-col ' >
+                                        <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Full Name</p>
+                                        <div className={` border ${(error && !fullname) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `} >
+                                            <CustomInput onChange={setFullname} name="fullname" type="text" placeholder="Enter Full Name" />
+                                        </div>
+                                    </div>
+                                    <div className=' flex w-full flex-col ' >
+                                        <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Email</p>
+                                        <div className={` border ${(error && !email) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `} >
+                                            <CustomInput onChange={setEmail} name="email" type="email" placeholder="Enter Email" />
+                                        </div>
+                                    </div>
+                                    <div className=' flex w-full flex-col ' >
+                                        <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Name Of Organisation</p>
+                                        <div className={` border ${(error && !organizationName) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `} >
+                                            <CustomInput onChange={setOrganizationName} name="organizationName" type="text" placeholder="Enter Name Of Organisation" />
+                                        </div>
+                                    </div>
+                                    <div className=' flex w-full flex-col ' >
+                                        <p className=' text-[#37137FBF] font-axiformamedium text-sm font-semibold ' >Message</p>
+                                        <div className={` border ${(error && !message) ? " border-red-600 text-red-600 " : " border-[#1E1E1E26] "} rounded-lg `}>
+
+                                            <CustomInput onChange={setMessage} name="message" type="text" textarea={true} placeholder="Enter Name Of Organisation" />
+                                        </div>
+                                    </div>
+                                    <button onClick={submit} className=' w-full rounded-lg h-[50px] z-20 relative bg-primary text-white text-center ' >{isLoading ? "Loading..." : "Submit"}</button>
+                                </div>
+                            </div>
+                        )}
+                        {tab === 2 && (
+
+                            <div className=" w-full flex flex-col gap-6 items-center px-2 pb-4 " >
+                                <p className=" font-bold text-primary " >Get The Full Experience In The App!</p>
+                                <div className=" w-full flex flex-col gap-4 " >
+                                    <div className=" flex w-full justify-between items-center " >
+                                        <img src="/images/googleplay.png" alt="google" className=" w-[145px] " />
+                                        <a href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" target="_blank" >
+                                            <button onClick={submit} className=' w-fit px-3 font-semibold  rounded-lg h-[44px] z-20 relative bg-[#37137F4D] text-[#37137F] text-center ' >proceed</button>
+                                            {/* <CustomButton rounded="8px" width="93px" fontSize="12px" color="#37137F" bgColor="#37137F4D" height="44px"  >Download</CustomButton> */}
+                                        </a>
+                                    </div>
+                                    <div className=" flex w-full justify-between items-center " >
+                                        <img src="/images/applestore.png" alt="google" className=" w-[145px] " />
+                                        <a href="https://apps.apple.com/ng/app/hiroek/id6474194083" target="_blank" >
+                                            <button onClick={submit} className=' w-fit px-3 font-semibold rounded-lg h-[44px] z-20 relative bg-[#37137F4D] text-[#37137F] text-center ' >proceed</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </Dialog.Content>
                 </Dialog.Portal>
-            </Dialog.Root>
+            </Dialog.Root> 
         </div>
     )
 }

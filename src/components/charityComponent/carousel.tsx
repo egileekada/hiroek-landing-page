@@ -91,7 +91,7 @@ export default function Carousel() {
                         }
                     })}
                     <div className=" flex justify-end w-full lg:max-w-[80%] lg:mb-5 " > 
-                        <GetInTouch open={open} setOpen={setOpen} activatebtn={true} />
+                        <GetInTouch tab={1} open={open} setOpen={setOpen} activatebtn={true} />
                     </div>
                     <div className=" w-full hidden lg:flex absolute bottom-0 z-10 justify-between items-center " >
                         <div onClick={() => clickHandler(isShown - 1)} role="button" className=" w-[45px] lg:w-[64px] " >

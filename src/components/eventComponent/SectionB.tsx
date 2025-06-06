@@ -19,7 +19,7 @@ export default function SectionB() {
                 <Forwardarrow />
             } /> */}
 
-            <GetInTouch open={open} label="Get In Touch" graident={true} setOpen={setOpen} activatebtn={true} />
+            <GetInTouch open={open} tab={0} label="Get In Touch" graident={true} setOpen={setOpen} activatebtn={true} />
 
             <img alt="whitestroke" src="/images/whitestroke.png" className=" object-cover inset-0 absolute opacity-5 w-full h-full " />
         </div>

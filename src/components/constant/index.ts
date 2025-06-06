@@ -66,38 +66,38 @@ export const eventData = [
 export const charityData = [
     {
         img: "/images/carousel/1d.png",
-        name: "Create and Manage Profiles",
-        detail: "Create and customise profiles with interests and affiliations.", 
+        name: "Create & Manage Profile",
+        detail: "Build and Customise Your Profiles with Ease", 
     }, 
     {
         img: "/images/carousel/2d.png",
-        name: "organise and manage events",
+        name: "Organise and Manage Events",
         detail: "Hiroek provides a dynamic space for you to showcase your events, share details, and create anticipation.", 
     }, 
     {
         img: "/images/carousel/3d.png",
-        name: "TRACK USER \n SIGN-UPS",
+        name: "Track Sign-Ups",
         detail: "Allow attendees to easily join via the app, streamlining the registration process.", 
     }, 
     {
         img: "/images/carousel/4d.png",
-        name: "CONNECT LOCALLY AND BEYOND",
-        detail: "Leverage the power of local and interest based communities. Reach a diverse and engaged audience that aligns with your mission. Enable community members to connect both online and in real life.", 
+        name: "Connect Locally and Beyond",
+        detail: "Harness the power of local and interest-based communities to reach a diverse, engaged audience aligned with your mission. Enable members to connect both online and in real life.", 
     }, 
     {
         img: "/images/carousel/5d.png",
-        name: "MANAGE USER DONATIONS",
-        detail: "Facilitate easy and secure donation processes directly through the app, empowering your supporters to contribute effortlessly.", 
+        name: "Manage fundraising",
+        detail: "Facilitate easy and secure fundraising processes directly through the app, empowering your supporters to contribute effortlessly.", 
     }, 
     {
         img: "/images/carousel/6d.png",
-        name: "AMPLIFY YOUR MESSAGE",
-        detail: "Hiroek provides a dedicated space for you to share your mission, impact stories, and upcoming events.\nReach a wider audience and raise awareness for your cause.", 
+        name: "Build Your Tribe",
+        detail: "Create communities centred around shared interests. \n Foster a sense of belonging among supporters while strengthening your network.", 
     }, 
     {
         img: "/images/carousel/7d.png",
-        name: "COMMUNITY BUILDING",
-        detail: "Create communities centered around specific causes or interests \nFoster a sense of belonging among your supporters and strengthen your network.", 
+        name: "Improve Communication and Real-time Updates",
+        detail: "Send push notifications for important updates, changes, and reminders directly to community members and event participants instantly.", 
     }, 
     // {
     //     img: "/images/carousel/8d.png",
@@ -106,7 +106,7 @@ export const charityData = [
     // },
     {
         img: "/images/carousel/8d.png",
-        name: "CROSS PLATFORM SHARING",
-        detail: "We have implemented social media integration for easy sharing, to gain more exposure and spread your message.", 
+        name: "Cross Platform Sharing",
+        detail: "With social media integration, easily share your events to gain more exposure and spread your message.", 
     }
 ]
