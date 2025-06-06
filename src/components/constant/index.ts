@@ -42,23 +42,23 @@ export const navlinkmobile = [
 
 export const eventData = [
     {
-        name: "Increased Visibility and Ease of Discovery",
-        detail: "Hiroek Makes it easier for users to find and sign up for events which can lead to higher participation rates. \n Attract a wider audience looking for events, and increase the chances of new participants discovering your events.",
+        name: "Increase Visibility and Ease of Discovery",
+        detail: "Hiroek makes it easier for users to find and sign up for events, leading to higher participation rates. \n Attract a wider audience and increase the chances of new participants discovering your events.",
         img: "/images/c1.png"
     },
     {
         name: "Enhanced User Experience",
-        detail: "Simplified Registration: Streamlined sign-up processes within the app reduces friction and improve the registration experience.",
+        detail: "Simplified Registration: Streamlined sign-up processes within the app reduce friction and improve the registration experience.",
         img: "/images/c2.png"
     },
     {
-        name: "Improved Communication",
+        name: "Improve Communication",
         detail: "Real-time Updates: Send push notifications for important updates, changes, or reminders directly to participants.",
         img: "/images/c3.png"
     },
     {
-        name: "Community Building",
-        detail: "Participants can connect with each other, share their experiences, and build a community around the events.",
+        name: "Build Your Tribe",
+        detail: "Participants can connect with each other, share experiences, and build a community around your events. ",
         img: "/images/c1.png"
     }
 ]

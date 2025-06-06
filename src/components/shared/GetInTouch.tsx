@@ -9,8 +9,10 @@ import httpService from '../../services/httpService';
 import { useEffect, useState } from 'react';
 
 interface IProps {
-    open: boolean,
-    setOpen: (by: boolean) => void,
+    open?: boolean,
+    setOpen?: any,
+    show?: boolean,
+    setShow?: any,
     text?: string,
     span?: boolean,
     no_underline?: boolean,
@@ -21,7 +23,7 @@ interface IProps {
     graident?: boolean,
 }
 
-export default function GetInTouch({ open, setOpen, text, span, no_underline, activatebtn, whitebg, coloredbtn, label, graident }: IProps) {
+export default function GetInTouch({ open, setOpen, show, setShow, text, span, no_underline, activatebtn, whitebg, coloredbtn, label, graident }: IProps) {
 
     // const { setEmail, setFullname, setMessage, setOrganizationName, isLoading, mutate, message, email, fullname, organizationName } = useMessage() 
 
@@ -90,12 +92,12 @@ export default function GetInTouch({ open, setOpen, text, span, no_underline, ac
                 } />
             )}
             {(activatebtn && !coloredbtn) && (
-                <CustomButton onClick={() => setOpen(true)} style={{ boxShadow: whitebg ? " " : graident ? " " : "3px 3px 0px 0px #37137F80", background: whitebg ? " " : graident ? " " : "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text={label ? label : "Activate your account"} size={"4"} type="button" className={` ${whitebg ? " !bg-white !text-primary "  : graident ? " !bg-[#37137F] " : "  !text-white " }  !cursor-pointer lg:ml-auto font-bold !w-fit !shadow-lg `} icon={
-                    whitebg ? 
-                    <Forwardarrowcolored /> :
-                    <Forwardarrow />
+                <CustomButton onClick={() => setOpen(true)} style={{ boxShadow: whitebg ? " " : graident ? " " : "3px 3px 0px 0px #37137F80", background: whitebg ? " " : graident ? " " : "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text={label ? label : "Activate your account"} size={"4"} type="button" className={` ${whitebg ? " !bg-white !text-primary " : graident ? " !bg-[#37137F] " : "  !text-white "}  !cursor-pointer lg:ml-auto font-bold !w-fit !shadow-lg `} icon={
+                    whitebg ?
+                        <Forwardarrowcolored /> :
+                        <Forwardarrow />
                 } />
-            )} 
+            )}
             {(activatebtn && coloredbtn) && (
                 <CustomButton onClick={() => setOpen(true)} text={label ? label : "Sign Up For Free"} size={"4"} type="button" className={` !bg-[#B00062] !cursor-pointer lg:ml-auto font-bold !w-fit !shadow-lg `} icon={
                     <Forwardarrow />
@@ -138,6 +140,32 @@ export default function GetInTouch({ open, setOpen, text, span, no_underline, ac
                                     </div>
                                 </div>
                                 <button onClick={submit} className=' w-full rounded-lg h-[50px] z-20 relative bg-primary text-white text-center ' >{isLoading ? "Loading..." : "Submit"}</button>
+                            </div>
+                        </div>
+                    </Dialog.Content>
+                </Dialog.Portal>
+            </Dialog.Root>
+
+            <Dialog.Root open={show} >
+                <Dialog.Portal  >
+                    <Dialog.Overlay onClick={() => setShow(false)} className="DialogOverlay bg-black bg-opacity-40 " />
+                    <Dialog.Content className="DialogContent relative ">
+                        <div className=" w-full flex flex-col gap-6 items-center px-2 pb-4 " >
+                            <p className=" font-bold text-primary " >Get The Full Experience In The App!</p>
+                            <div className=" w-full flex flex-col gap-4 " >
+                                <div className=" flex w-full justify-between items-center " >
+                                    <img src="/images/google.png" alt="google" className=" w-[145px] " />
+                                    <a href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" target="_blank" >
+                                        <button onClick={submit} className=' w-full rounded-lg h-[44px] z-20 relative bg-[#37137F4D] text-[#37137F] text-center ' >proceed</button>
+                                        {/* <CustomButton rounded="8px" width="93px" fontSize="12px" color="#37137F" bgColor="#37137F4D" height="44px"  >Download</CustomButton> */}
+                                    </a>
+                                </div>
+                                <div className=" flex w-full justify-between items-center " >
+                                    <img src="/images/apple.png" alt="google" className=" w-[145px] " />
+                                    <a href="https://apps.apple.com/ng/app/hiroek/id6474194083" target="_blank" >
+                                        <button onClick={submit} className=' w-full rounded-lg h-[44px] z-20 relative bg-[#37137F4D] text-[#37137F] text-center ' >proceed</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </Dialog.Content>

@@ -16,7 +16,7 @@ export default function EightSection() {
             </div>
             <div className=" lg:max-w-[500px] lg:py-24 relative z-10 flex lg:px-0 px-6 bg-primary pt-4 lg:h-auto h-[300px] flex-col gap-3 " >
                 <p className=" text-3xl xl:text-[56px] lg:text-[45px] xl:leading-[60px] lg:leading-[50px] font-black " >AN APP <br /> ON A MISSION! </p>
-                <p className=" xl:text-2xl font-axiformamedium ">Unlike platforms focused solely on fundraising or event management, Hiroek facilitates connections based on shared interests in specific causes, enhancing the sense of community, fosters deeper engagement and commitment among users.</p>
+                <p className=" xl:text-2xl font-axiformamedium ">Unlike platforms focused solely on event ticketing, Hiroek facilitates connections based on shared interests, enhancing the sense of community, fosters deeper engagement and commitment among users.</p>
                 {/* <CustomButton style={{ boxShadow: "3px 3px 0px 0px #37137F80" }} text="Get Started" size={"4"} type="button" className=" !bg-[#B00062] !text-white font-bold !w-fit !shadow-lg " icon={
                     <Forwardarrow />
                 } /> */} 
