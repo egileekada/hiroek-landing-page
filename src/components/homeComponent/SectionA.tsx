@@ -10,14 +10,10 @@ export default function FirstSection() {
     const [isShown, setIsShown] = useState(0)
     const [ open, setOpen ] = useState(false)
     const data = [
-        "/images/bg1.png",
-        "/images/bg2.png",
-        "/images/bg3.png",
-        "/images/bg4.jpg",
-        "/images/bg5.webp",
-        "/images/bg6.jpg",
-        "/images/bg7.webp"
-    ]
+        "/images/home/bg1.jpg",
+        "/images/home/bg2.jpg",
+        "/images/home/bg3.jpg", 
+    ] 
 
     const boxAnimation = {
         key: "box",

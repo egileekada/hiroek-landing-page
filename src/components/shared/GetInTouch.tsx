@@ -17,10 +17,11 @@ interface IProps {
     activatebtn?: boolean,
     whitebg?: boolean
     coloredbtn?: boolean,
-    label?: string
+    label?: string,
+    graident?: boolean,
 }
 
-export default function GetInTouch({ open, setOpen, text, span, no_underline, activatebtn, whitebg, coloredbtn, label }: IProps) {
+export default function GetInTouch({ open, setOpen, text, span, no_underline, activatebtn, whitebg, coloredbtn, label, graident }: IProps) {
 
     // const { setEmail, setFullname, setMessage, setOrganizationName, isLoading, mutate, message, email, fullname, organizationName } = useMessage() 
 
@@ -78,7 +79,7 @@ export default function GetInTouch({ open, setOpen, text, span, no_underline, ac
     }
 
     return (
-        <div className=' w-fit relative ' >
+        <div className=' w-fit relative font-black ' >
 
             {(text && span && !activatebtn) && (
                 <span onClick={() => setOpen(true)} role="button" className={no_underline ? ' font-medium text-lg ' : ' underline '}  >{text ? text : "Get In Touch"}</span>
@@ -89,7 +90,7 @@ export default function GetInTouch({ open, setOpen, text, span, no_underline, ac
                 } />
             )}
             {(activatebtn && !coloredbtn) && (
-                <CustomButton onClick={() => setOpen(true)} style={{ boxShadow: whitebg ? " " : "3px 3px 0px 0px #37137F80", background: whitebg ? " " : "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text={label ? label : "Activate your account"} size={"4"} type="button" className={` ${whitebg ? " !bg-white !text-primary " : "  !text-white " }  !cursor-pointer lg:ml-auto font-bold !w-fit !shadow-lg `} icon={
+                <CustomButton onClick={() => setOpen(true)} style={{ boxShadow: whitebg ? " " : graident ? " " : "3px 3px 0px 0px #37137F80", background: whitebg ? " " : graident ? " " : "linear-gradient(180deg, #8C43FE 0%, #37137F 81%)" }} text={label ? label : "Activate your account"} size={"4"} type="button" className={` ${whitebg ? " !bg-white !text-primary "  : graident ? " !bg-[#37137F] " : "  !text-white " }  !cursor-pointer lg:ml-auto font-bold !w-fit !shadow-lg `} icon={
                     whitebg ? 
                     <Forwardarrowcolored /> :
                     <Forwardarrow />
