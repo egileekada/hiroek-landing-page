@@ -83,14 +83,16 @@ export default function Carousel() {
                     {charityData?.map((item, index) => {
                         if (index === isShown) {
                             return (
-                                <div key={index} className=" flex flex-col lg:text-right lg:items-end h-[200px] lg:max-w-[80%] gap-6 " >
+                                <div key={index} className=" flex flex-col lg:text-right top-0 lg:items-end h-[350px] lg:max-w-[80%] gap-6 " >
                                     <motion.p {...boxAnimation} className=" text-3xl whitespace-pre-line lg:text-[50px] lg:leading-[60px] uppercase " >{item?.name}</motion.p>
                                     <motion.p {...boxAnimation} className=" whitespace-pre-line text-[#424242] lg:text-2xl lg:leading-[36px] " >{item?.detail}</motion.p>
                                 </div>
                             )
                         }
                     })}
-                    <GetInTouch open={open} setOpen={setOpen} activatebtn={true} />
+                    <div className=" flex justify-end w-full lg:max-w-[80%] lg:mb-5 " > 
+                        <GetInTouch open={open} setOpen={setOpen} activatebtn={true} />
+                    </div>
                     <div className=" w-full hidden lg:flex absolute bottom-0 z-10 justify-between items-center " >
                         <div onClick={() => clickHandler(isShown - 1)} role="button" className=" w-[45px] lg:w-[64px] " >
                             <CarouselLeftArrow />
