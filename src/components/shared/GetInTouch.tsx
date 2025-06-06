@@ -185,14 +185,14 @@ export default function GetInTouch({ open, setOpen, tab, text, span, no_underlin
                                     <div className=" flex w-full justify-between items-center " >
                                         <img src="/images/googleplay.png" alt="google" className=" w-[145px] " />
                                         <a href="https://play.google.com/store/apps/details?id=com.hiroek.app.hiroek" target="_blank" >
-                                            <button onClick={submit} className=' w-fit px-3 font-semibold  rounded-lg h-[44px] z-20 relative bg-[#37137F4D] text-[#37137F] text-center ' >proceed</button>
+                                            <button onClick={submit} className=' w-fit px-3 font-semibold  rounded-lg h-[44px] z-20 relative bg-[#37137F4D] text-[#37137F] text-center ' >Proceed</button>
                                             {/* <CustomButton rounded="8px" width="93px" fontSize="12px" color="#37137F" bgColor="#37137F4D" height="44px"  >Download</CustomButton> */}
                                         </a>
                                     </div>
                                     <div className=" flex w-full justify-between items-center " >
                                         <img src="/images/applestore.png" alt="google" className=" w-[145px] " />
                                         <a href="https://apps.apple.com/ng/app/hiroek/id6474194083" target="_blank" >
-                                            <button onClick={submit} className=' w-fit px-3 font-semibold rounded-lg h-[44px] z-20 relative bg-[#37137F4D] text-[#37137F] text-center ' >proceed</button>
+                                            <button onClick={submit} className=' w-fit px-3 font-semibold rounded-lg h-[44px] z-20 relative bg-[#37137F4D] text-[#37137F] text-center ' >Proceed</button>
                                         </a>
                                     </div>
                                 </div>
