@@ -48,7 +48,7 @@ export const eventData = [
     },
     {
         name: "Enhance User Experience",
-        detail: "Simplified Registration: Streamlined sign-up processes within the app reduce friction and improve the registration experience.",
+        detail: "Simplified registration and Streamline sign-up processes within the app reduce friction and improve the registration experience.",
         img: "/images/c2.png"
     },
     {
