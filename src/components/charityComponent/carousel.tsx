@@ -79,18 +79,18 @@ export default function Carousel() {
                         <img alt={"tab"} src={charityData[7]?.img} className=" lg:object-contain object-contain h-auto lg:h-auto lg:w-full " />
                     </div>
                 </div>
-                <div className=" w-full lg:h-[600px] h-fit flex lg:relative lg:items-center lg:justify-center flex-col gap-6  " >
+                <div className=" w-full lg:h-[600px] h-fit flex lg:relative lg:items-center lg:justify-center flex-col gap-3 lg:gap-6  " >
                     {charityData?.map((item, index) => {
                         if (index === isShown) {
                             return (
-                                <div key={index} className=" flex flex-col lg:text-right top-0 lg:items-end h-[230px] lg:h-[350px] lg:max-w-[80%] gap-6 " >
-                                    <motion.p {...boxAnimation} className=" text-3xl whitespace-pre-line lg:text-[50px] lg:leading-[60px] uppercase " >{item?.name}</motion.p>
-                                    <motion.p {...boxAnimation} className=" whitespace-pre-line text-[#424242] lg:text-2xl lg:leading-[36px] " >{item?.detail}</motion.p>
+                                <div key={index} className=" flex flex-col lg:text-right top-0 lg:items-end h-[230px] lg:h-[350px] lg:max-w-[80%] gap-2 lg:gap-6 " >
+                                    <motion.p {...boxAnimation} className=" whitespace-pre-line text-2xl lg:text-[40px] lg:leading-[120%] uppercase " >{item?.name}</motion.p>
+                                    <motion.p {...boxAnimation} className=" whitespace-pre-line text-[#424242] lg:text-2xl lg:leading-[120%] " >{item?.detail}</motion.p>
                                 </div>
                             )
                         }
                     })}
-                    <div className=" flex justify-end w-full lg:max-w-[80%] lg:mb-5 " > 
+                    <div className=" flex justify-end w-full lg:max-w-[80%] mt-3 lg:mb-5 " > 
                         <GetInTouch tab={1} open={open} setOpen={setOpen} activatebtn={true} />
                     </div>
                     <div className=" w-full hidden lg:flex absolute bottom-0 z-10 justify-between items-center " >
